@@ -7,6 +7,6 @@ public class PlayFabLogInRequest : MonoBehaviour
     public PlayFabManager playerFabManager;
     public void GetUserInfo(string username,string password)
     {
-        playerFabManager.RegisterPlayer(username,password);
+        playerFabManager.Login(username,password);
     }
 }

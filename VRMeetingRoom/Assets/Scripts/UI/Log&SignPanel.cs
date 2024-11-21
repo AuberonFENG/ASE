@@ -31,6 +31,11 @@ public class SigninPanel : MonoBehaviour
 
     private void OnLoginClick()
     {
+        if (username.text == "" || password.text == "")
+        {
+            Debug.Log("");
+            return;
+        }
         logInRequest.GetUserInfo(username.text, password.text);
     }
     
