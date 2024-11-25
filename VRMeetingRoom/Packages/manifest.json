@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.hecomi.udesktopduplication": "https://github.com/hecomi/uDesktopDuplication.git#upm",
     "com.unity.burst": "1.8.18",
     "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
