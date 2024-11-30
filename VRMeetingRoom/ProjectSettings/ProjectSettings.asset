@@ -144,7 +144,9 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -6283244721492138042, guid: e3aee76b9372917449aef639e2f74814, type: 2}
+  - {fileID: -799144910338680681, guid: 87b413c5a910b15498a98200731b1754, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -942,11 +944,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0fd129ca-16dc-4f00-831c-d214b3892321
+  cloudProjectId: 6cc9649c-6708-494b-b81d-61f4e22109b9
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: VRMeetingRoom
-  organizationId: wangx44
+  organizationId: wechat_os_qy01mpajsanz9fl2fxqx4t5ue
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
