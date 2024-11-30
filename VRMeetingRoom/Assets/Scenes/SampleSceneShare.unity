@@ -788,6 +788,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 92396b2653869a64491c38dc1d2d08e4, type: 2}
+    - target: {fileID: 1223745239211478051, guid: 281eb28b46747524c827bb52db3b563f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1460622664377508430, guid: 281eb28b46747524c827bb52db3b563f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -842,6 +847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Draw Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2960767386684015816, guid: 281eb28b46747524c827bb52db3b563f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6566233736918784543, guid: 281eb28b46747524c827bb52db3b563f,
         type: 3}
@@ -7100,6 +7110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery Interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 4561598888617898672, guid: e9e8956bce235e54db09fa2f44c06b9d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4683408364973889388, guid: e9e8956bce235e54db09fa2f44c06b9d,
         type: 3}
       propertyPath: m_Name
@@ -7123,17 +7138,17 @@ PrefabInstance:
     - target: {fileID: 5682004494698856580, guid: e9e8956bce235e54db09fa2f44c06b9d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.309
+      value: 1.379
       objectReference: {fileID: 0}
     - target: {fileID: 5682004494698856580, guid: e9e8956bce235e54db09fa2f44c06b9d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.884
+      value: 0.8394
       objectReference: {fileID: 0}
     - target: {fileID: 5682004494698856580, guid: e9e8956bce235e54db09fa2f44c06b9d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.407
+      value: 11.296
       objectReference: {fileID: 0}
     - target: {fileID: 6653476119920084642, guid: e9e8956bce235e54db09fa2f44c06b9d,
         type: 3}
