@@ -580,7 +580,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: 'We need microphone access to enable voice recording. '
   locationUsageDescription: 
   microphoneUsageDescription: 
   bluetoothUsageDescription: 
