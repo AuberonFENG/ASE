@@ -580,10 +580,10 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 'We need microphone access to enable voice recording. '
+  cameraUsageDescription: 'We need camera access to enable voice recording. '
   locationUsageDescription: 
-  microphoneUsageDescription: 
-  bluetoothUsageDescription: 
+  microphoneUsageDescription: 'We need microphone access to enable voice recording. '
+  bluetoothUsageDescription: 'We need bluetooth access to enable voice recording. '
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
   switchNetLibKey: 
