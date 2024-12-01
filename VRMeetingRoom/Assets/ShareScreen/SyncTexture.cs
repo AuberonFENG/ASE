@@ -1,28 +1,29 @@
 using UnityEngine;
 using Unity.Netcode;
-using System.IO;
+using Unity.Collections;
 using UnityEngine.InputSystem;
 
-
-public class MonitorTextureReplicator : NetworkBehaviour
+public class LargeTextureSync : NetworkBehaviour
 {
+    private byte[] textureData; // Byte array to store texture data
     private Renderer monitorRenderer;
 
     private void Start()
     {
         monitorRenderer = GetComponent<Renderer>();
+        NetworkManager.Singleton.CustomMessagingManager.OnUnnamedMessage += OnTextureReceived; // Register callback for custom messages
     }
 
     private void Update()
     {
         if (IsOwner && Keyboard.current.mKey.wasPressedThisFrame)
         {
-            Debug.LogError("Begin Sync Texture");
-            ReplicateMaterial();
+            Debug.Log("Begin syncing texture...");
+            PrepareAndSendTexture();
         }
     }
 
-    private void ReplicateMaterial()
+    private void PrepareAndSendTexture()
     {
         // Ensure the material's texture is readable
         var texture = monitorRenderer.material.mainTexture as Texture2D;
@@ -42,36 +43,75 @@ public class MonitorTextureReplicator : NetworkBehaviour
         readableTexture.Apply();
         RenderTexture.active = currentRT;
 
-        // Convert texture to a byte array
-        byte[] textureData = readableTexture.EncodeToPNG();
+        // Convert texture to byte array
+        textureData = readableTexture.EncodeToPNG();
+        Debug.Log($"Prepared texture data: {textureData.Length} bytes");
 
-        // Send texture data to the server
-        SendTextureToServerRpc(textureData);
+        // Send texture data to all connected clients
+        SendTextureToAllClients();
     }
 
-    [ServerRpc(RequireOwnership = false)]
-    private void SendTextureToServerRpc(byte[] textureData, ServerRpcParams rpcParams = default)
+    private void SendTextureToAllClients()
     {
-        // Broadcast texture data to all clients
-        DistributeTextureToClientsClientRpc(textureData);
-    }
-
-    [ClientRpc]
-    private void DistributeTextureToClientsClientRpc(byte[] textureData)
-    {
-        ApplyTexture(textureData);
-    }
-
-    private void ApplyTexture(byte[] textureData)
-    {
-        Texture2D texture = new Texture2D(2, 2);
-        if (texture.LoadImage(textureData))
+        if (textureData == null || textureData.Length == 0)
         {
-            monitorRenderer.material.mainTexture = texture;
+            Debug.LogError("No texture data to send.");
+            return;
+        }
+
+        var customMessagingManager = NetworkManager.Singleton.CustomMessagingManager;
+        foreach (var clientId in NetworkManager.ConnectedClientsIds)
+        {
+            if (clientId == NetworkManager.LocalClientId) continue;
+
+            SendTextureData(clientId, textureData);
+        }
+    }
+
+    private void SendTextureData(ulong clientId, byte[] data)
+    {
+        using (var writer = new FastBufferWriter(data.Length, Allocator.Temp))
+        {
+            writer.WriteBytesSafe(data); // Write the texture data
+            NetworkManager.Singleton.CustomMessagingManager.SendUnnamedMessage(clientId, writer, NetworkDelivery.ReliableFragmentedSequenced);
+        }
+
+        Debug.Log($"Sent texture data of size {data.Length} bytes to client {clientId}");
+    }
+
+    private void OnTextureReceived(ulong clientId, FastBufferReader reader)
+    {
+        Debug.Log($"Received texture data from client {clientId}");
+
+        int dataLength = reader.Length;
+        textureData = new byte[dataLength];
+        reader.ReadBytesSafe(ref textureData, dataLength); // Read the texture data
+
+        Debug.Log($"Recreating texture from {dataLength} bytes");
+
+        // Recreate the texture from the received byte array
+        Texture2D receivedTexture = new Texture2D(2, 2);
+        if (receivedTexture.LoadImage(textureData))
+        {
+            Debug.Log($"Texture recreated successfully: {receivedTexture.width}x{receivedTexture.height}");
+            ApplyTexture(receivedTexture);
         }
         else
         {
-            Debug.LogError("Failed to load texture from data.");
+            Debug.LogError("Failed to load texture from received data.");
+        }
+    }
+
+    private void ApplyTexture(Texture2D texture)
+    {
+        if (monitorRenderer != null)
+        {
+            monitorRenderer.material.mainTexture = texture;
+            Debug.Log("Applied received texture to material.");
+        }
+        else
+        {
+            Debug.LogError("No renderer found to apply the texture.");
         }
     }
 }

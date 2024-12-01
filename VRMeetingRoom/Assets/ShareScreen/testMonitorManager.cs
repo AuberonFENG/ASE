@@ -32,7 +32,7 @@ public class MonitorManager : NetworkBehaviour
     private void SpawnMonitor(ulong clientId)
     {
         GameObject monitor = Instantiate(monitorPrefab, GetSpawnPosition(clientId), Quaternion.identity);
-        monitor.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
+        monitor.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
         NetworkObject networkObject = monitor.GetComponent<NetworkObject>();
         networkObject.SpawnWithOwnership(clientId);
     }
