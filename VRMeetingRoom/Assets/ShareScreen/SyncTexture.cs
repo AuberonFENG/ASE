@@ -8,7 +8,7 @@ public class ContinuousTextureStreamer : NetworkBehaviour
 {
     private byte[] textureData; // Byte array to store texture data
     private Renderer monitorRenderer;
-    public float frameRate = 1f; // Frames per second for texture updates (adjustable)
+    public float frameRate = 30f; // Frames per second for texture updates (adjustable)
 
     private void Start()
     {
@@ -54,7 +54,7 @@ public class ContinuousTextureStreamer : NetworkBehaviour
 
         // Convert texture to byte array
         textureData = readableTexture.EncodeToPNG();
-        Debug.Log($"Streaming texture: {textureData.Length} bytes");
+        // Debug.Log($"Streaming texture: {textureData.Length} bytes");
 
         // Send texture data to all connected clients
         SendTextureToAllClients();
@@ -85,24 +85,24 @@ public class ContinuousTextureStreamer : NetworkBehaviour
             NetworkManager.Singleton.CustomMessagingManager.SendUnnamedMessage(clientId, writer, NetworkDelivery.ReliableFragmentedSequenced);
         }
 
-        Debug.Log($"Sent texture data of size {data.Length} bytes to client {clientId}");
+        // Debug.Log($"Sent texture data of size {data.Length} bytes to client {clientId}");
     }
 
     private void OnTextureReceived(ulong clientId, FastBufferReader reader)
     {
-        Debug.Log($"Received texture data from client {clientId}");
+        // Debug.Log($"Received texture data from client {clientId}");
 
         int dataLength = reader.Length;
         textureData = new byte[dataLength];
         reader.ReadBytesSafe(ref textureData, dataLength); // Read the texture data
 
-        Debug.Log($"Recreating texture from {dataLength} bytes");
+        // Debug.Log($"Recreating texture from {dataLength} bytes");
 
         // Recreate the texture from the received byte array
         Texture2D receivedTexture = new Texture2D(2, 2);
         if (receivedTexture.LoadImage(textureData))
         {
-            Debug.Log($"Texture recreated successfully: {receivedTexture.width}x{receivedTexture.height}");
+            // Debug.Log($"Texture recreated successfully: {receivedTexture.width}x{receivedTexture.height}");
             ApplyTexture(receivedTexture);
         }
         else
@@ -116,7 +116,7 @@ public class ContinuousTextureStreamer : NetworkBehaviour
         if (monitorRenderer != null)
         {
             monitorRenderer.material.mainTexture = texture;
-            Debug.Log("Applied received texture to material.");
+            // Debug.Log("Applied received texture to material.");
         }
         else
         {
