@@ -263,18 +263,15 @@ public class Texture : MonoBehaviour
 
     void Update()
     {
-                    // Ensure this logic runs only on the owning client.
-            if (!GetComponent<NetworkObject>().IsOwner)
-            {
-                return; // Exit the method if not the owner.
-            }
-                // Check if 'K' key is pressed
-        if (Input.GetKeyDown(KeyCode.K))
+                // Ensure this logic runs only on the owning client.
+        if (!GetComponent<NetworkObject>().IsOwner)
         {
-            KeepMonitor();
-            RequireUpdate();
-            UpdateMaterial();
+            return; // Exit the method if not the owner.
         }
+            // Check if 'K' key is pressed
+        KeepMonitor();
+        RequireUpdate();
+        UpdateMaterial();
     }
 
     void KeepMonitor()
