@@ -5,7 +5,7 @@ namespace uDesktopDuplication
 {
 
 [RequireComponent(typeof(Renderer))]
-public class Texture : MonoBehaviour
+public class LocalTexture : MonoBehaviour
 {
     Monitor monitor_;
     public Monitor monitor 
@@ -337,7 +337,7 @@ public class Texture : MonoBehaviour
     public struct RayCastResult
     {
         public bool hit;
-        public Texture texture;
+        public LocalTexture texture;
         public Vector3 position;
         public Vector3 normal;
         public Vector2 coords;
@@ -453,7 +453,7 @@ public class Texture : MonoBehaviour
 
     public static RayCastResult RayCastAll(Vector3 from, Vector3 dir)
     {
-        foreach (var uddTexture in GameObject.FindObjectsOfType<uDesktopDuplication.Texture>()) {
+        foreach (var uddTexture in GameObject.FindObjectsOfType<uDesktopDuplication.LocalTexture>()) {
             var result = uddTexture.RayCast(from, dir);
             if (result.hit) return result;
         }
