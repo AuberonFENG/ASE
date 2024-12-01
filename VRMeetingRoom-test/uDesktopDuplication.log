@@ -1,0 +1,14 @@
+[uDD::Log][2024-11-30 15:21:38] Start
+[uDD::Log][2024-11-30 15:21:38] OS Version    : 10.0
+[uDD::Log][2024-11-30 15:21:38] Build Number  : 18363
+[uDD::Log][2024-11-30 15:21:38] Service Pack  : 
+[uDD::Log][2024-11-30 15:21:38] Graphics Card [0] : NVIDIA GeForce RTX 2060
+[uDD::Log][2024-11-30 15:21:38]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2024-11-30 15:21:38] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2024-11-30 15:21:38] Monitor::Initialized() =>
+[uDD::Log][2024-11-30 15:21:38]     ID    : 0
+[uDD::Log][2024-11-30 15:21:38]     Size  : (1920, 1080)
+[uDD::Log][2024-11-30 15:21:38]     DPI   : (141, 141)
+[uDD::Log][2024-11-30 15:21:38]     Rot   : Landscape
+[uDD::Log][2024-11-30 15:21:38] Duplicator::Initialize() => OK.
+[uDD::Log][2024-11-30 15:23:21] Stop
