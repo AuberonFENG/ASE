@@ -8,7 +8,7 @@ public class ContinuousTextureStreamer : NetworkBehaviour
 {
     private byte[] textureData; // Byte array to store texture data
     private Renderer monitorRenderer;
-    public float frameRate = 30f; // Frames per second for texture updates (adjustable)
+    public float frameRate = 10f; // Frames per second for texture updates (adjustable)
 
     private void Start()
     {
