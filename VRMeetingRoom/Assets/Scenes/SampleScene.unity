@@ -3114,8 +3114,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1746218425}
-  - component: {fileID: 1746218424}
   - component: {fileID: 1746218423}
+  - component: {fileID: 1746218424}
   m_Layer: 0
   m_Name: ShareScreen
   m_TagString: Untagged
@@ -3156,7 +3156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191b479f2e93eee44ba3c523407cfc8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monitorPrefab: {fileID: 0}
+  monitorPrefab: {fileID: 1000012642892690, guid: ea7feb0abf7b331468a29aa2ca76a59a,
+    type: 3}
 --- !u!4 &1746218425
 Transform:
   m_ObjectHideFlags: 0
