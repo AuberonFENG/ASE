@@ -446,7 +446,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8647664954492677990, guid: 0267a1d338db2bf4c9625e450bbaaad0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1782429176}
   m_SourcePrefab: {fileID: 100100000, guid: 0267a1d338db2bf4c9625e450bbaaad0, type: 3}
 --- !u!23 &161094783 stripped
 MeshRenderer:
@@ -699,6 +703,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 874452183138526564, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_NetworkConfig.Prefabs.NetworkPrefabsLists.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 874452183138526564, guid: 3967f87296c892e40b57e37bc8601550,
+        type: 3}
+      propertyPath: m_NetworkConfig.Prefabs.NetworkPrefabsLists.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: b12d9dd73f539e0469b8ba2cc8b9af41,
+        type: 2}
     - target: {fileID: 4145292139985048678, guid: 3967f87296c892e40b57e37bc8601550,
         type: 3}
       propertyPath: m_RootOrder
@@ -3094,6 +3109,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1744998813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1782429169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8647664954492677990, guid: 0267a1d338db2bf4c9625e450bbaaad0,
+    type: 3}
+  m_PrefabInstance: {fileID: 158475618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1782429176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782429169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191b479f2e93eee44ba3c523407cfc8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monitorPrefab: {fileID: 1000012642892690, guid: ea7feb0abf7b331468a29aa2ca76a59a,
+    type: 3}
 --- !u!23 &1785242249 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 4395696707165843879, guid: e9e8956bce235e54db09fa2f44c06b9d,
@@ -3439,17 +3474,17 @@ PrefabInstance:
     - target: {fileID: 4964279142484738452, guid: 09dc757e762684c09903fcada323ce30,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.4949495
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964279142484738452, guid: 09dc757e762684c09903fcada323ce30,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964279142484738452, guid: 09dc757e762684c09903fcada323ce30,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.4949495
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964279143189340573, guid: 09dc757e762684c09903fcada323ce30,
         type: 3}
