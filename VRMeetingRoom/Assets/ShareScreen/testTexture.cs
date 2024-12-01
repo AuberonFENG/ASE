@@ -268,9 +268,13 @@ public class Texture : MonoBehaviour
             {
                 return; // Exit the method if not the owner.
             }
-        KeepMonitor();
-        RequireUpdate();
-        UpdateMaterial();
+                // Check if 'K' key is pressed
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            KeepMonitor();
+            RequireUpdate();
+            UpdateMaterial();
+        }
     }
 
     void KeepMonitor()

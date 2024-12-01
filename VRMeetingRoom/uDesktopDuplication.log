@@ -1,14 +1,14 @@
-[uDD::Log][2024-11-25 16:50:56] Start
-[uDD::Log][2024-11-25 16:50:56] OS Version    : 10.0
-[uDD::Log][2024-11-25 16:50:56] Build Number  : 22631
-[uDD::Log][2024-11-25 16:50:56] Service Pack  : 
-[uDD::Log][2024-11-25 16:50:56] Graphics Card [0] : NVIDIA RTX A4000
-[uDD::Log][2024-11-25 16:50:56]   > Monitor[0] : \\.\DISPLAY5
-[uDD::Log][2024-11-25 16:50:56] Graphics Card [1] : Intel(R) UHD Graphics 770
-[uDD::Log][2024-11-25 16:50:56] Graphics Card [2] : Microsoft Basic Render Driver
-[uDD::Log][2024-11-25 16:50:56] Monitor::Initialized() =>
-[uDD::Log][2024-11-25 16:50:56]     ID    : 0
-[uDD::Log][2024-11-25 16:50:56]     Size  : (2560, 1440)
-[uDD::Log][2024-11-25 16:50:56]     DPI   : (108, 108)
-[uDD::Log][2024-11-25 16:50:56]     Rot   : Landscape
-[uDD::Err][2024-11-25 16:50:56] Duplicator::Initialize() => Unsupported display.
+[uDD::Log][2024-12-01 15:44:36] Start
+[uDD::Log][2024-12-01 15:44:36] OS Version    : 10.0
+[uDD::Log][2024-12-01 15:44:36] Build Number  : 19045
+[uDD::Log][2024-12-01 15:44:36] Service Pack  : 
+[uDD::Log][2024-12-01 15:44:36] Graphics Card [0] : NVIDIA GeForce RTX 4070 SUPER
+[uDD::Log][2024-12-01 15:44:36]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2024-12-01 15:44:36] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2024-12-01 15:44:36] Monitor::Initialized() =>
+[uDD::Log][2024-12-01 15:44:36]     ID    : 0
+[uDD::Log][2024-12-01 15:44:36]     Size  : (2560, 1440)
+[uDD::Log][2024-12-01 15:44:36]     DPI   : (108, 108)
+[uDD::Log][2024-12-01 15:44:36]     Rot   : Landscape
+[uDD::Log][2024-12-01 15:44:36] Duplicator::Initialize() => OK.
+[uDD::Log][2024-12-01 15:44:46] Stop

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: -7768443948124173004}
   - component: {fileID: 341505781850103048}
   - component: {fileID: -7448646183810652351}
-  - component: {fileID: -8556527582002720628}
   m_Layer: 0
   m_Name: Monitor Board
   m_TagString: Untagged
@@ -170,15 +169,3 @@ MonoBehaviour:
   useClip_: 0
   clipPos: {x: 0, y: 0}
   clipScale: {x: 0.2, y: 0.2}
---- !u!114 &-8556527582002720628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012642892690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bd8f501f6487824cab43acda07ccddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
