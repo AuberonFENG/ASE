@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 23000011974915108}
   - component: {fileID: -3980223420654798953}
   - component: {fileID: -7768443948124173004}
-  - component: {fileID: 341505781850103048}
   - component: {fileID: -7448646183810652351}
-  - component: {fileID: -7063946318047406541}
+  - component: {fileID: -3652763643659160028}
+  - component: {fileID: -6075769367626238741}
   m_Layer: 0
   m_Name: Monitor Board
   m_TagString: Untagged
@@ -141,18 +141,6 @@ MonoBehaviour:
   Interpolate: 1
   SlerpPosition: 0
   isServerAuthoritative: 0
---- !u!114 &341505781850103048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000012642892690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c4a4bd441d10b3458c90e3029921af8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-7448646183810652351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +158,7 @@ MonoBehaviour:
   useClip_: 0
   clipPos: {x: 0, y: 0}
   clipScale: {x: 0.2, y: 0.2}
---- !u!114 &-7063946318047406541
+--- !u!114 &-3652763643659160028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,5 +168,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6bd8f501f6487824cab43acda07ccddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 30
+--- !u!114 &-6075769367626238741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012642892690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4a4bd441d10b3458c90e3029921af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
