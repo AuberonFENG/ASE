@@ -1,25 +1,34 @@
 using UnityEngine;
 using Unity.Netcode;
 using Unity.Collections;
-using UnityEngine.InputSystem;
+using System.Collections;
 
-public class LargeTextureSync : NetworkBehaviour
+
+public class ContinuousTextureStreamer : NetworkBehaviour
 {
     private byte[] textureData; // Byte array to store texture data
     private Renderer monitorRenderer;
+    public float frameRate = 1f; // Frames per second for texture updates (adjustable)
 
     private void Start()
     {
         monitorRenderer = GetComponent<Renderer>();
         NetworkManager.Singleton.CustomMessagingManager.OnUnnamedMessage += OnTextureReceived; // Register callback for custom messages
+
+        if (IsOwner)
+        {
+            StartCoroutine(StreamTextures());
+        }
     }
 
-    private void Update()
+    private IEnumerator StreamTextures()
     {
-        if (IsOwner && Keyboard.current.mKey.wasPressedThisFrame)
+        float frameInterval = 1f / frameRate; // Time interval between frames
+
+        while (true)
         {
-            Debug.Log("Begin syncing texture...");
             PrepareAndSendTexture();
+            yield return new WaitForSeconds(frameInterval); // Control the frame rate
         }
     }
 
@@ -45,7 +54,7 @@ public class LargeTextureSync : NetworkBehaviour
 
         // Convert texture to byte array
         textureData = readableTexture.EncodeToPNG();
-        Debug.Log($"Prepared texture data: {textureData.Length} bytes");
+        Debug.Log($"Streaming texture: {textureData.Length} bytes");
 
         // Send texture data to all connected clients
         SendTextureToAllClients();
