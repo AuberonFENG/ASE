@@ -942,11 +942,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 0fd129ca-16dc-4f00-831c-d214b3892321
+  cloudProjectId: ed63075d-ead8-423e-9851-94e0e42e6f9b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: VRMeetingRoom
-  organizationId: wangx44
+  organizationId: unix64a
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
