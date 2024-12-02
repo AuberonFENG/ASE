@@ -59,7 +59,7 @@ namespace XRMultiplayer
                 playerId += CheckParrelSync();
 #endif
 #endif
-                //playerId += DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                playerId += DateTime.Now.ToString("yyyyMMddHHmmssfff");
                 // Check for command line args in builds
                 if (!Application.isEditor && m_UseCommandLineArgs)
                 {
