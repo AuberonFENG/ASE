@@ -15,7 +15,7 @@ public class JoinChannelVideo : MonoBehaviour
     // 填入你的频道名
     private string _channelName = "channel";
     // 填入 Token
-    private string _token = "007eJxTYLDwNkp23taop/nZMtFuljVLho2kg9zf6cHb/CetVp7WvUGBwTQlKTHF1MDQODHFyMTQyDLRwNwgycI40dLSJM3SIs1syX+v9IZARgbGikMsQBIMQXx2huSMxLy81BwGBgCnMR2w";
+    private string _token = "007eJxTYHjwzic5X+eH2pGlXqcefH/5Z8c206SXIQuaO1fb3tyd4CKlwGCakpSYYmpgaJyYYmRiaGSZaGBukGRhnGhpaZJmaZFmpvjLN70hkJGh5/pqVkYGCATx2RmSMxLz8lJzGBgAwGcj0Q==";
     internal VideoSurface LocalView;
     internal VideoSurface RemoteView;
     internal IRtcEngine RtcEngine;

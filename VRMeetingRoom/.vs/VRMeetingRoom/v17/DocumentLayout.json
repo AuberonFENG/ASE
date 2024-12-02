@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "JoinChannelVideo.cs",
+              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:20:39.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "NetworkedMaterial.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkedMaterial.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "NetworkMaterial.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkMaterial.cs",
@@ -59,12 +76,11 @@
               "RelativeToolTip": "Assets\\NetworkMaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:06:28.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T16:06:28.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClientNetworkTransform.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
@@ -72,12 +88,11 @@
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:59:08.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T15:59:08.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NetworkedSlider.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
@@ -85,12 +100,11 @@
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:28:48.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T15:28:48.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NetworkedDropdown.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
@@ -98,12 +112,11 @@
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:46:09.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T15:46:09.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthenticationManager.cs",
               "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",

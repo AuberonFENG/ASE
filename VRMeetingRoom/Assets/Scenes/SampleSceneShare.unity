@@ -1098,24 +1098,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 256748110}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &278776748 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7725953602572214653, guid: 0b05a6b839588074db938f357bd44f72,
-    type: 3}
-  m_PrefabInstance: {fileID: 1467044741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &278776749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278776748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cbf9c82be00b4e429f2f477b56714de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &291779912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2946,7 +2928,7 @@ PrefabInstance:
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
@@ -2966,7 +2948,7 @@ PrefabInstance:
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.06
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
@@ -2991,12 +2973,12 @@ PrefabInstance:
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.07
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6170437601358484321, guid: 0b05a6b839588074db938f357bd44f72,
         type: 3}
@@ -3018,15 +3000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4216205667717117193, guid: 0b05a6b839588074db938f357bd44f72, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7725953602572214653, guid: 0b05a6b839588074db938f357bd44f72,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 278776749}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b05a6b839588074db938f357bd44f72, type: 3}
 --- !u!1 &1477891650
 GameObject:
