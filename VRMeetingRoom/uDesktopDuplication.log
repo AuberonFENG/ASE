@@ -1,14 +1,14 @@
-[uDD::Log][2024-12-01 20:52:51] Start
-[uDD::Log][2024-12-01 20:52:51] OS Version    : 10.0
-[uDD::Log][2024-12-01 20:52:51] Build Number  : 19045
-[uDD::Log][2024-12-01 20:52:51] Service Pack  : 
-[uDD::Log][2024-12-01 20:52:51] Graphics Card [0] : NVIDIA GeForce RTX 4070 SUPER
-[uDD::Log][2024-12-01 20:52:51]   > Monitor[0] : \\.\DISPLAY1
-[uDD::Log][2024-12-01 20:52:51] Graphics Card [1] : Microsoft Basic Render Driver
-[uDD::Log][2024-12-01 20:52:51] Monitor::Initialized() =>
-[uDD::Log][2024-12-01 20:52:51]     ID    : 0
-[uDD::Log][2024-12-01 20:52:51]     Size  : (2560, 1440)
-[uDD::Log][2024-12-01 20:52:51]     DPI   : (108, 108)
-[uDD::Log][2024-12-01 20:52:51]     Rot   : Landscape
-[uDD::Log][2024-12-01 20:52:51] Duplicator::Initialize() => OK.
-[uDD::Log][2024-12-01 20:53:58] Stop
+[uDD::Log][2024-12-02 15:09:46] Start
+[uDD::Log][2024-12-02 15:09:46] OS Version    : 10.0
+[uDD::Log][2024-12-02 15:09:46] Build Number  : 18363
+[uDD::Log][2024-12-02 15:09:46] Service Pack  : 
+[uDD::Log][2024-12-02 15:09:46] Graphics Card [0] : NVIDIA GeForce RTX 2060
+[uDD::Log][2024-12-02 15:09:46]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2024-12-02 15:09:46] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2024-12-02 15:09:46] Monitor::Initialized() =>
+[uDD::Log][2024-12-02 15:09:46]     ID    : 0
+[uDD::Log][2024-12-02 15:09:46]     Size  : (1920, 1080)
+[uDD::Log][2024-12-02 15:09:46]     DPI   : (141, 141)
+[uDD::Log][2024-12-02 15:09:46]     Rot   : Landscape
+[uDD::Log][2024-12-02 15:09:46] Duplicator::Initialize() => OK.
+[uDD::Log][2024-12-02 15:12:36] Stop
