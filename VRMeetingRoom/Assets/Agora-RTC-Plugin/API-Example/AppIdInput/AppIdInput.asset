@@ -3,14 +3,15 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 310468f085ef24732beac714c9bb64fd, type: 3}
   m_Name: AppIdInput
   m_EditorClassIdentifier: 
-  appID: 
-  token: 
+  appID: 5dbad5013ad24129a070b83a994f98f6
+  token: 007eJxTYHjwzic5X+eH2pGlXqcefH/5Z8c206SXIQuaO1fb3tyd4CKlwGCakpSYYmpgaJyYYmRiaGSZaGBukGRhnGhpaZJmaZFmpvjLN70hkJGh5/pqVkYGCATx2RmSMxLz8lJzGBgAwGcj0Q==
   channelName: Unity_Channel
