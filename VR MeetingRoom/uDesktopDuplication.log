@@ -1,0 +1,16 @@
+[uDD::Log][2025-01-30 15:16:50] Start
+[uDD::Log][2025-01-30 15:16:50] OS Version    : 10.0
+[uDD::Log][2025-01-30 15:16:50] Build Number  : 22631
+[uDD::Log][2025-01-30 15:16:50] Service Pack  : 
+[uDD::Log][2025-01-30 15:16:50] Graphics Card [0] : Intel(R) Arc(TM) Graphics
+[uDD::Log][2025-01-30 15:16:50]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2025-01-30 15:16:50] Graphics Card [1] : Intel(R) Arc(TM) Graphics
+[uDD::Log][2025-01-30 15:16:50] Graphics Card [2] : Intel(R) Arc(TM) Graphics
+[uDD::Log][2025-01-30 15:16:50] Graphics Card [3] : Microsoft Basic Render Driver
+[uDD::Log][2025-01-30 15:16:50] Monitor::Initialized() =>
+[uDD::Log][2025-01-30 15:16:50]     ID    : 0
+[uDD::Log][2025-01-30 15:16:50]     Size  : (3200, 2000)
+[uDD::Log][2025-01-30 15:16:50]     DPI   : (236, 236)
+[uDD::Log][2025-01-30 15:16:50]     Rot   : Landscape
+[uDD::Log][2025-01-30 15:16:50] Duplicator::Initialize() => OK.
+[uDD::Log][2025-01-30 15:18:09] Stop

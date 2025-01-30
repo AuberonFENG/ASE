@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(255, 96, 139, 0); width: 100%; height: 100%; flex-direction: row; flex-wrap: wrap-reverse; align-items: stretch; justify-content: space-between;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 16%; height: 16%; background-color: rgb(255, 231, 0); flex-direction: row; flex-wrap: wrap;">
+            <ui:Button text="File" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 133px; -unity-font-style: bold; color: rgb(0, 0, 0); font-size: 28px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 16%; height: 16%; background-color: rgb(255, 231, 0); flex-direction: row; flex-wrap: wrap;">
+            <ui:Button text="Mute" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 133px; -unity-font-style: bold; color: rgb(0, 0, 0); font-size: 28px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 16%; height: 16%; background-color: rgb(255, 231, 0); flex-direction: row; flex-wrap: wrap;">
+            <ui:Button text="Share Camera" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 133px; -unity-font-style: bold; color: rgb(0, 0, 0); font-size: 16px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 16%; height: 16%; background-color: rgb(255, 231, 0); flex-direction: row; flex-wrap: wrap;">
+            <ui:Button text="Chat" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 133px; -unity-font-style: bold; color: rgb(0, 0, 0); font-size: 28px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; width: 16%; height: 16%; background-color: rgb(255, 231, 0); flex-direction: row; flex-wrap: wrap;">
+            <ui:Button text="Exit Meeting" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 133px; -unity-font-style: bold; color: rgb(0, 0, 0); font-size: 18px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

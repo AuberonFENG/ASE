@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.52f1 (1120fcb54228) revision 1122556'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.18363) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 16290 MB
+OS: 'Windows 11  (10.0.22631) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 32373 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-F:\Unity\Hub\Editor\2022.3.52f1\Editor\Unity.exe
+D:\Unity\2022.3.52f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-F:/Github/Sourcetree/ASE/VR MeetingRoom
+D:/ASE/Test/VR MeetingRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49867
-Successfully changed project path to: F:/Github/Sourcetree/ASE/VR MeetingRoom
-F:/Github/Sourcetree/ASE/VR MeetingRoom
+62928
+Successfully changed project path to: D:/ASE/Test/VR MeetingRoom
+D:/ASE/Test/VR MeetingRoom
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,75 +49,77 @@ F:/Github/Sourcetree/ASE/VR MeetingRoom
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1548]  Target information:
+Player connection [6684]  Target information:
 
-Player connection [1548]  * "[IP] 169.254.242.75 [Port] 0 [Flags] 2 [Guid] 1591606529 [EditorId] 1591606529 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NP0P8UM5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [6684]  * "[IP] 10.6.51.60 [Port] 0 [Flags] 2 [Guid] 2040203695 [EditorId] 2040203695 [Version] 1048832 [Id] WindowsEditor(7,BruceµÄThinkBook) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1548]  * "[IP] 169.254.30.37 [Port] 0 [Flags] 2 [Guid] 1591606529 [EditorId] 1591606529 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NP0P8UM5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [1548]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1591606529 [EditorId] 1591606529 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NP0P8UM5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [1548]  * "[IP] 10.6.46.192 [Port] 0 [Flags] 2 [Guid] 1591606529 [EditorId] 1591606529 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NP0P8UM5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [1548] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1548] Host joined alternative multi-casting on [225.0.0.222:34997]...
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 7.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Player connection [6684] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6684] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+Refreshing native plugins compatible for Editor in 44.57 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 3.19 ms.
 Initialize engine version: 2022.3.52f1 (1120fcb54228)
-[Subsystems] Discovering subsystems at path F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path F:/Github/Sourcetree/ASE/VR MeetingRoom/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.52f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/ASE/Test/VR MeetingRoom/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
-    Vendor:   NVIDIA
-    VRAM:     5955 MB
-    Driver:   32.0.15.6603
+    Renderer: Intel(R) Arc(TM) Graphics (ID=0x7d55)
+    Vendor:   Intel
+    VRAM:     16186 MB
+    Driver:   32.0.101.5768
 Initialize mono
-Mono path[0] = 'F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/Managed'
-Mono path[1] = 'F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
+Mono path[0] = 'D:/Unity/2022.3.52f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.52f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.52f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: F:/Unity/Hub/Editor/2022.3.52f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.004220 seconds.
-- Loaded All Assemblies, in  0.311 seconds
+Register platform support module: D:/Unity/2022.3.52f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2022.3.52f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: D:/Unity/2022.3.52f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity/2022.3.52f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.016784 seconds.
+- Loaded All Assemblies, in  0.721 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 393 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.231 seconds
-Domain Reload Profiling: 542ms
-	BeginReloadAssembly (106ms)
+- Finished resetting the current domain, in  0.842 seconds
+Domain Reload Profiling: 1563ms
+	BeginReloadAssembly (180ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (123ms)
-		LoadAssemblies (105ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (191ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (121ms)
-			TypeCache.Refresh (120ms)
-				TypeCache.ScanAssembly (108ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (231ms)
+		AnalyzeDomain (318ms)
+			TypeCache.Refresh (314ms)
+				TypeCache.ScanAssembly (282ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (842ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (186ms)
+		SetupLoadedEditorAssemblies (785ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (567ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (129ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (149ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -126,121 +128,246 @@ Domain Reload Profiling: 542ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.506 seconds
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.519 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.512 seconds
-Domain Reload Profiling: 1019ms
-	BeginReloadAssembly (134ms)
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.709 seconds
+Domain Reload Profiling: 3228ms
+	BeginReloadAssembly (232ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (304ms)
-		LoadAssemblies (237ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (1116ms)
+		LoadAssemblies (707ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (150ms)
-			TypeCache.Refresh (133ms)
-				TypeCache.ScanAssembly (120ms)
-			ScanForSourceGeneratedMonoScriptInfo (12ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (513ms)
+		AnalyzeDomain (561ms)
+			TypeCache.Refresh (481ms)
+				TypeCache.ScanAssembly (444ms)
+			ScanForSourceGeneratedMonoScriptInfo (59ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1710ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (398ms)
+		SetupLoadedEditorAssemblies (1410ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (45ms)
-			ProcessInitializeOnLoadAttributes (325ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (1024ms)
+			ProcessInitializeOnLoadMethodAttributes (238ms)
 			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (54.6 KB). Loaded Objects now: 3559.
-Memory consumption went from 118.3 MB to 118.2 MB.
-Total: 4.511600 ms (FindLiveObjects: 0.315800 ms CreateObjectMapping: 0.279700 ms MarkObjects: 3.600200 ms  DeleteObjects: 0.314700 ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 25.15 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 8841 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 153 unused Assets / (431.0 KB). Loaded Objects now: 9262.
+Memory consumption went from 328.6 MB to 328.1 MB.
+Total: 8.414500 ms (FindLiveObjects: 1.035000 ms CreateObjectMapping: 0.754900 ms MarkObjects: 6.064900 ms  DeleteObjects: 0.558100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/IMetadataObserver.cs: 324c9ce929d1a8c865d9367b18fea739 -> 
+  custom:scripting/monoscript/fileName/JoinChannelVideo.cs: 4b4d9bd62ab905a23efea91d1ab28e6f -> 
+  custom:scripting/monoscript/fileName/AgoraRtcEngine.cs: fd1bd1841d3af19bab160317546c26a7 -> 
+  custom:scripting/monoscript/fileName/PluginSceneSample.cs: 03479793b1cb77357b55859793cc111d -> 
+  custom:scripting/monoscript/fileName/IAudioPcmFrameSink.cs: dbe1fbe32653ddc1e776eb5d5fd3c4f4 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/MediaPlayer.cs: eed806c107f0df0f5fc97bc9c4afd7a3 -> 
+  custom:scripting/monoscript/fileName/MusicContentCenter.cs: 75390e9089cbe848abe845896a303aa5 -> 
+  custom:scripting/monoscript/fileName/AudioDeviceManager.cs: eca2b1d4478d1f348c40e1079c77a944 -> 
+  custom:scripting/monoscript/fileName/RingBuffer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/AudioFrameObserverNative.cs: a64f53037aa29f06d1ee4719287f2654 -> 
+  custom:scripting/monoscript/fileName/IVideoFrameMetaInfo.cs: 84d498db7479a0ece5fbdfe313ec9a8b -> 
+  custom:scripting/monoscript/fileName/PackageTools.cs: 1f33b46761542df2108e279ff53e3e9e -> 
+  custom:scripting/monoscript/fileName/CustomCaptureAudio.cs: 0fcdddfe0d4004c1086d4a807b748cf3 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/IAudioFrameObserver.cs: aa810ad112f5f8c68b0119f72886fc28 -> 
+  custom:scripting/monoscript/fileName/IAudioDeviceManager.cs: f90003b04cbf8180f22971024e082b7f -> 
+  custom:scripting/monoscript/fileName/JsonMockWrapper.cs: cfda643a2a4bdf836c84708aa1b88339 -> 
+  custom:scripting/monoscript/fileName/AgoraMediaPlayerTypes.cs: 66fa5344f79bd1f259b181ff445927dc -> 
+  custom:scripting/monoscript/fileName/IRtcEngine.cs: 9184fbe90a7c55396adf3fb172fb5bc5 -> 
+  custom:scripting/monoscript/fileName/ChannelMediaRelay.cs: a7d6564db76798352a7bf93f92701f22 -> 
+  custom:scripting/monoscript/fileName/AgoraEventType.cs: a13f003cbcfd5b11534f302342640911 -> 
+  custom:scripting/monoscript/fileName/MetaDataObserverNative.cs: 14c86edeefdab91c12b65baef28a745e -> 
+  custom:scripting/monoscript/fileName/JoinChannelAudio.cs: eabcfcbe3a19fa218d280a2d888744cd -> 
+  custom:scripting/monoscript/fileName/AgoraRtcEngineEx.cs: a7ea3898e0aa0199193c86118ca76d0d -> 
+  custom:scripting/monoscript/fileName/H265TranscoderObserverNative.cs: 2c388e822508fa8ffd2a90b1a70213f0 -> 
+  custom:scripting/monoscript/fileName/ILocalSpatialAudioEngine.cs: 72a4bbbe7dd6a46e116725329ca750d2 -> 
+  custom:scripting/monoscript/fileName/VideoSurface.cs: 42eb5342d750c86083886f301757d0ff -> 
+  custom:scripting/monoscript/fileName/AgoraMediaBase.cs: e8c71f125063a72ce731c5722afecc3d -> 
+  custom:scripting/monoscript/fileName/RtcEngineEventHandler.cs: 308f0c8a078a3db402976019f4c3a12e -> 
+  custom:scripting/monoscript/fileName/AgoraMediaBaseNative.cs: 81dde0b127cac14104e762646a8c1706 -> 
+  custom:scripting/monoscript/fileName/VideoFrameMetaInfo.cs: a2dbcac8dc543b0fe12cc82dd815fe1d -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/JsonData.cs: 779e885594a5a3b514e782b9db559e4c -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MediaPlayerWithCustomDataProviderExample.cs: 507f2a04995a5b13faeffa6f0f299ee5 -> 
+  custom:scripting/monoscript/fileName/UIElementDragger.cs: 92ff4b33d8ad8384357427e04511351a -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/JoinChannelVideoToken.cs: 4c321040596976d6e7e7f43a4044b5f8 -> 
+  custom:scripting/monoscript/fileName/Home.cs: e41f4924417eab97e845fe33d15d2acb -> 
+  custom:scripting/monoscript/fileName/H265Transcoder.cs: c955c53ee16b735abcf80974c4a5c4ef -> 
+  custom:scripting/monoscript/fileName/StartRtmpStreamWithTranscoding.cs: 53a70747cbb3ab06e3178b08b6ef4d37 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/Logger.cs: 0342bfb719c8e504b6198e4fd0ea5637 -> ab9390554f9bc6021ac2f9cbee9a81ff
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/IRtcEngineEventHandler.cs: d0e9705adf2ca745b97d0932e2ba1b28 -> 
+  custom:scripting/monoscript/fileName/IVideoDeviceManager.cs: 0307f23b0b0b5d915a90565be9d769a1 -> 
+  custom:scripting/monoscript/fileName/IVideoFrameObserver.cs: 9ea6190f424a00cdc3a2b146472abbd8 -> 
+  custom:scripting/monoscript/fileName/AgoraOptional.cs: ed5b2f39d36cb6026ea9ae2526de7490 -> 
+  custom:scripting/monoscript/fileName/SpatialAudioWithMediaPlayer.cs: a8e2622ad32136af946ac4e35d52b888 -> 
+  custom:scripting/monoscript/fileName/LocalAudioCallQualityPanel.cs: 04496fbf72a6d7ef2d5dcbb5753076a6 -> 
+  custom:scripting/monoscript/fileName/IMusicPlayer.cs: 356e5d1d6a2840936100ac183eafc397 -> 
+  custom:scripting/monoscript/fileName/TextureManager.cs: f9ccd176891c3a314830bc9600229c20 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerSourceObserverNative.cs: 5d05fd4f3b5f35551f90b68ddced372c -> 
+  custom:scripting/monoscript/fileName/MusicPlayerImpl.cs: 1a3db41927cd74ce5aab9afff45c4375 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerSourceObserver.cs: 213fba4f6e9b2786f93871680ec10e1d -> 
+  custom:scripting/monoscript/fileName/IH265TranscoderObserver.cs: 5233036ad6d9627acd447a088743031d -> 
+  custom:scripting/monoscript/fileName/RtcEngineEventHandlerNative.cs: 8e73735416913ebdbdbd5e371502c08b -> 
+  custom:scripting/monoscript/fileName/TextureManagerYUVA.cs: 59a7f5dde2977c67a946a34f8d5a6812 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerExample.cs: dce623a7197771174b2155868496fabf -> 
+  custom:scripting/monoscript/fileName/AudioCallRoute.cs: 64591c9c27a831c8a471f6e9611429f2 -> 
+  custom:scripting/monoscript/fileName/MediaRecorder.cs: 5bd1aa60a2b622a1df86f36572b1eb55 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/AudioSpectrum.cs: 0a7329080fdc8036643a23f5d31fa9e7 -> 
+  custom:scripting/monoscript/fileName/DeviceManager.cs: 981c3b6b0cb60ef48ed1c3bbbd17aef8 -> 
+  custom:scripting/monoscript/fileName/VideoRender.cs: e8feb0f51f4fada1a8a4d9952279fff9 -> 
+  custom:scripting/monoscript/fileName/IAudioEncodedFrameObserver.cs: ba9af8dff6c4f78c293a65a4cccbda76 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerCacheManager.cs: 6f5ea8d78e1eba38c377a2de5aaf6ec6 -> 
+  custom:scripting/monoscript/fileName/IMediaPlayer.cs: fe37f09656d148a00d7faf9091b54b8e -> 
+  custom:scripting/monoscript/fileName/JsonMapper.cs: a11d169ddf687bf344d33787b80d53c7 -> 
+  custom:scripting/monoscript/fileName/VideoSurfaceYUVA.cs: 14f510c834639c7c319effc81fc12a94 -> 
+  custom:scripting/monoscript/fileName/MusicPlayerExample.cs: 5741fe3233259f0d85cd6eaaad812f49 -> 
+  custom:scripting/monoscript/fileName/IMediaPlayerCustomDataProvider.cs: 1d870171d893a1a4c7e5a015c78c86ce -> 
+  custom:scripting/monoscript/fileName/AgoraBase.cs: 4954d629f9e3a220468a676ccf826845 -> 
+  custom:scripting/monoscript/fileName/AgoraCallbackQueue.cs: b3eb6384ce37692a3cc675016e5db856 -> 
+  custom:scripting/monoscript/fileName/PermissionHelper.cs: 5c71ecd1a1253771ddc35362e95b388f -> 
+  custom:scripting/monoscript/fileName/VideoFrameObserverNative.cs: 5812070d9a86bfdd8ee0c0918a15dd77 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RequestToken.cs: 5868e32a0dac34048f913760d8c1b7cc -> 
+  custom:scripting/monoscript/fileName/JsonReader.cs: 4a422bf9bc6ac0de0231f49a1a370df7 -> 
+  custom:scripting/monoscript/fileName/IMediaPlayerCacheManager.cs: 1bed8063a0745f4397ffeb1fe76d6235 -> 
+  custom:scripting/monoscript/fileName/MusicContentCenterEventHandlerNative.cs: 8117cbc1fc9c0e9158c59ec674d9d137 -> 
+  custom:scripting/monoscript/fileName/LocalSpatialAudioEngine.cs: 89e5b736605d2a235de193a16e52efa9 -> 
+  custom:scripting/monoscript/fileName/TextureManagerYUV.cs: 63a3870f2eeaf4b663d22771bf2bbc5f -> 
+  custom:scripting/monoscript/fileName/MediaPlayerImpl.cs: eaa193fe223fe841acdd23312f04951a -> 
+  custom:scripting/monoscript/fileName/MusicContentCenterImpl.cs: 9a329c55aec724304ea44c543051e7b7 -> 
+  custom:scripting/monoscript/fileName/AgoraApiType.cs: 270daf39c3e0948e83af164608080ac5 -> 
+  custom:scripting/monoscript/fileName/CommandBuild.cs: 3e35e144a5edcc7fcf2887e599e7812f -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/FaceInfoObserverNative.cs: 586fb223dfa987b907921ccbe33e8285 -> 
+  custom:scripting/monoscript/fileName/MediaRecorderObserverNative.cs: 612008cdc533926a13de3919fd987350 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/StartLocalVideoTranscoder.cs: 0c65e93380af6078cb16c4c9f26e61c9 -> 
+  custom:scripting/monoscript/fileName/IRtcEngineEx.cs: 91895c1a8dcd90956bd53d39d9bd8ad7 -> 
+  custom:scripting/monoscript/fileName/SpatialAudioEngineImpl.cs: 97f8313cf51e5e53581392e643feba26 -> 
+  custom:scripting/monoscript/fileName/AudioPcmFrameSinkNative.cs: f973925d1d870fadf6cc05b6875e7c76 -> 
+  custom:scripting/monoscript/fileName/StartRhythmPlayer.cs: 44e40db0817545d65e24e2b2c1642b1a -> 
+  custom:scripting/monoscript/fileName/VideoEncodedFrameObserverNative.cs: 5031fd748f7087c39c92ddc5195356fa -> 
+  custom:scripting/monoscript/fileName/IMusicContentCenterEventHandler.cs: dfb8dabe814b78c59f0911cd2e1cc871 -> 
+  custom:scripting/monoscript/fileName/SpatialAudioWithUsers.cs: dc81e9b2e38b8e2e317e2966ec998764 -> 
+  custom:scripting/monoscript/fileName/AppIdInput.cs: 94a4f7503c85aad86c2fe38f4e23732e -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:scripting/monoscript/fileName/JoinChannelWithUserAccount.cs: 8ae957f103490a40897a8cefaaa798a2 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/IMediaRecorder.cs: 542bb064c5c46bf37704d07edbaef30a -> 
+  custom:scripting/monoscript/fileName/IH265Transcoder.cs: 8cd9a98ccb4babb239e82f771803b676 -> 
+  custom:scripting/monoscript/fileName/VideoDeviceManagerImpl.cs: 421430b233fe270ef2ee8a1cb5c9a603 -> 
+  custom:scripting/monoscript/fileName/BL_BuildPostProcess.cs: cb07cd8190fa14e55452e34a3dbb84b5 -> 
+  custom:scripting/monoscript/fileName/StreamMessage.cs: f4de333580d9d09b2b248782411c4264 -> 
+  custom:scripting/monoscript/fileName/IAudioSpectrumObserver.cs: 50427051e66ba5d1fbe867ad7d719c3b -> 
+  custom:scripting/monoscript/fileName/MediaPlayerCustomDataProviderNative.cs: ee082a8ad133d6c36126882bc22f8fba -> 
+  custom:scripting/monoscript/fileName/IMusicContentCenter.cs: 08ac6961b6ffbe0792db256edb90639c -> 
+  custom:scripting/monoscript/fileName/AgoraUtil.cs: 1f8be32b90c591b3bb685a1c9179dbf6 -> 
+  custom:scripting/monoscript/fileName/ProcessAudioRawData.cs: 1356f42261a4e891b5fec38c52b099e3 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerCacheManagerImpl.cs: 7a70c9f10dd40c280f06b300f8a4bde2 -> 
+  custom:scripting/monoscript/fileName/AgoraGameObject.cs: 26f31c0fc531f2f7f2c47542eb1c8ebb -> 
+  custom:scripting/monoscript/fileName/RtcEngine.cs: db2722d2207b06cff859b95c1068b47b -> 
+  custom:scripting/monoscript/fileName/IMediaRecorderObserver.cs: 85ac66a2f54caae669fe80ecc68ac96e -> 
+  custom:scripting/monoscript/fileName/RtcEngineImpl.cs: c2f3c47f13ce0f031b3f703b62fd2002 -> 
+  custom:scripting/monoscript/fileName/AudioSpectrumObserverNative.cs: 8b9e7c440ded677b4703e64a5935a22c -> 
+  custom:scripting/monoscript/fileName/ObsoleteMethodWarning.cs: c62dfa8310bd1558c531621e1423d7ee -> 
+  custom:scripting/monoscript/fileName/AgoraCallbackObject.cs: 4feb5119a2093a41c818c4a6e7fe2cde -> 
+  custom:scripting/monoscript/fileName/IVideoEncodedFrameObserver.cs: af2dcc8d01a9f24e65ea8bfb698fbed7 -> 
+  custom:scripting/monoscript/fileName/IFaceInfoObserver.cs: d00fded0c8945b385d440f5814a3e7b2 -> 
+  custom:scripting/monoscript/fileName/AgoraSpatialAudio.cs: ebaa456afdd6259687b24cef3e032d52 -> 
+  custom:scripting/monoscript/fileName/AgoraRtcApiNative.cs: 6d969993e60d4bf4e630b844f01f8902 -> 
+  custom:scripting/monoscript/fileName/MediaRecorderImpl.cs: b8565e45defd3e41a21b9e4d547c9c29 -> 
+  custom:scripting/monoscript/fileName/H265TranscoderImpl.cs: 898f344ee76e0e4869839bc07c4d8330 -> 
+  custom:scripting/monoscript/fileName/AudioDeviceManagerImpl.cs: 08f3163ab5f06e100108747e8ac4b3ab -> 
+  custom:scripting/monoscript/fileName/AgoraLog.cs: 709b410cc35331c250cec638653fa3ec -> 
+  custom:scripting/monoscript/fileName/StartDirectCdnStreaming.cs: ca14e345f9f90ebaf44ee39e372c74b0 -> 
+  custom:scripting/monoscript/fileName/AudioMixing.cs: 9c66507f963e8e96f0fc75c8d467f7b2 -> 
+  custom:scripting/monoscript/fileName/Base.cs: 4c06e77ce08cd2022f9882b1c0a1bc92 -> 
+  custom:scripting/monoscript/fileName/IMediaPlayerSourceObserver.cs: 79cbc1d845b84260f737f205e3f4ce85 -> 
+  custom:scripting/monoscript/fileName/JsonException.cs: 795569d19d06c778da8c9d5531f8e760 -> 
+  custom:scripting/monoscript/fileName/JsonWriter.cs: 58b6ca79f0359131355b3a71dad0b4f1 -> 
+  custom:scripting/monoscript/fileName/MediaRecorderObserver.cs: d9783ac3f979cba9489c2ef3d4a6fd37 -> 
+  custom:scripting/monoscript/fileName/AgoraMusicContentCenter.cs: abf29dbd9e05cb8793705e1226281e52 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/VideoSurfaceYUV.cs: 1cc3726109c3f749de5bd8677ac75b00 -> 
+  custom:scripting/monoscript/fileName/AgoraRhythmPlayer.cs: b4622a3989a72e6a62a6fa45c2b7b226 -> 
+  custom:scripting/monoscript/fileName/MediaPlayerAudioSpectrumObserverNative.cs: d3f43f96a8dc634295089aa8203239d8 -> 
+  custom:scripting/monoscript/fileName/VoiceChanger.cs: af69d1e06b782f730aaba9e7d01745d2 -> 
+  custom:scripting/monoscript/fileName/MusicPlayer.cs: 7e15b82ee89b4a9b6a567422e87adfb0 -> 
+  custom:scripting/monoscript/fileName/RemoteAudioCallQualityPanel.cs: bde5e27b166bd60b478c8cbda17eacf5 -> 
+  custom:scripting/monoscript/fileName/AudioEncodedFrameObserverNative.cs: d698c97eb87b5e9c74512eef60fc7e51 -> 
+  custom:scripting/monoscript/fileName/EncryptionSample.cs: e5c673cfdeb2e51c457a8f75ee3e1fef -> 
+  custom:scripting/monoscript/fileName/VideoDeviceManager.cs: a6e4a2e79d7694c98bb8c5cb2a07d3ab -> 
+  custom:scripting/monoscript/fileName/Lexer.cs: dae17217dc831e153afaed69fd1ddadd -> 
+  custom:scripting/monoscript/fileName/MetadataSample.cs: f2875a39486f7feaf78528ccdda5637d -> 
+  custom:scripting/monoscript/fileName/IJsonWrapper.cs: 6188f86f2ae37f430c41b50601f633ba -> 
+  custom:scripting/monoscript/fileName/CustomRenderAudio.cs: 41fd9363e31a8be1824c58c60c985469 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5762.192517 seconds.
-  path: Assets/Resources
-  artifactKey: Guid(cd418d4e6d8d72c489e83aca7a82ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources using Guid(cd418d4e6d8d72c489e83aca7a82ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '02028a3f7b414ae0f91e97c8c07cc2cd') in 0.002508 seconds
+  Time since last request: 17678.542599 seconds.
+  path: Assets/VRMPAssets/MiniGames/MiniGameVideos/Slingshot_Minigame_Onboarding_Video.mp4
+  artifactKey: Guid(4ab488194da03d24a9afd26a53842fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRMPAssets/MiniGames/MiniGameVideos/Slingshot_Minigame_Onboarding_Video.mp4 using Guid(4ab488194da03d24a9afd26a53842fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+ -> (artifact id: 'c658fc7590d63bcf031aa350bf91901e') in 0.036160 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 38.144132 seconds.
-  path: Assets/Resources/NewUXMLTemplate.uxml
-  artifactKey: Guid(037e5b1a2b5a031408f80b34a4963fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/NewUXMLTemplate.uxml using Guid(037e5b1a2b5a031408f80b34a4963fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '8c1f7309399b6160b9a92692d55421a8') in 0.011155 seconds
+  Time since last request: 6.029994 seconds.
+  path: Assets/VRMPAssets/MiniGames/MiniGameTextures/Icon_Player_State_Cancel.png
+  artifactKey: Guid(9445afc31d9744bc3be095b4747abfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRMPAssets/MiniGames/MiniGameTextures/Icon_Player_State_Cancel.png using Guid(9445afc31d9744bc3be095b4747abfc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+ -> (artifact id: '4ae02b6410ad857a931c23de89db33d8') in 0.116454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/VRMPAssets/MiniGames/MiniGameTextures/PiggyBank_A.png
+  artifactKey: Guid(a86bdd893c7432c4db4085d09d135519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRMPAssets/MiniGames/MiniGameTextures/PiggyBank_A.png using Guid(a86bdd893c7432c4db4085d09d135519) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 22 workers.
+ -> (artifact id: 'c1c1def818b97a6e33b7c403f894efbe') in 0.032280 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 19.841820 seconds.
-  path: Assets/Resources/SampleTest.uxml
-  artifactKey: Guid(037e5b1a2b5a031408f80b34a4963fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SampleTest.uxml using Guid(037e5b1a2b5a031408f80b34a4963fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '1d1f63b730b684275e4e0f9da52210a5') in 0.001012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 394.296002 seconds.
-  path: Assets/Resources/New Panel Settings.asset
-  artifactKey: Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/New Panel Settings.asset using Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '468a0dfaa6df06c213e2e590b942c5a3') in 0.023651 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 13.500736 seconds.
-  path: Assets/Resources/Panel Settings.asset
-  artifactKey: Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Panel Settings.asset using Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '24e2a3af3d7e1077d13ef2b4ea0c72a9') in 0.009218 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
-========================================================================
-Received Import Request.
-  Time since last request: 3555.675821 seconds.
-  path: Assets/Resources/Panel Settings.asset
-  artifactKey: Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Panel Settings.asset using Guid(9856247f7a123ff4d9f6ad9287358be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '6ec1412dfb60c3658a2e31b50559d7b5') in 0.008271 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 24
