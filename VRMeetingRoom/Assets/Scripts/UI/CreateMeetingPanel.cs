@@ -1,27 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class CreateMeetingPanel : MonoBehaviour
 {
-    public CreateMeeting createMeetingRequest;
-    public TMP_InputField password;
+    public PlayFabCreateMeetingRequest createMeetingRequest;
+    public TMP_InputField meetingPassword;
     public Button createMeetingButton;
-    private void Start()
+
+    // Start is called before the first frame update
+    void Start()
     {
-        password.text = "";
+        meetingPassword.text = "";
         createMeetingButton.onClick.AddListener(OnCreateMeetingClick);
     }
+
     private void OnCreateMeetingClick()
     {
-        if (password.text == "")
+        Debug.Log("meetingPassword: " + meetingPassword.text);
+        if (meetingPassword.text == "")
         {
-            Debug.Log("");
+            Debug.Log("Error: meetingPassword is empty! ");
             return;
         }
-        createMeetingRequest.GetUserInfo(password.text);
+        createMeetingRequest.GetMeetingInfo(meetingPassword.text);
+
+        //
     }
-    
+
 }

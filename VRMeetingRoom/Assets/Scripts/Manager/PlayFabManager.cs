@@ -6,6 +6,7 @@ using PlayFab.ClientModels;
 
 public class PlayFabManager : MonoBehaviour
 {
+    private string username;
     public void RegisterPlayer(string username, string password)
     {
         var RegisterRequest = new RegisterPlayFabUserRequest
@@ -67,6 +68,9 @@ public class PlayFabManager : MonoBehaviour
     private void OnLoginSuccess(LoginResult result)
     {
         Debug.Log("LoginSuccess");
+        
+        GetUsername(result.PlayFabId);
+        
         // next step function
     }
 
@@ -80,5 +84,65 @@ public class PlayFabManager : MonoBehaviour
         {
             Debug.LogError(error.GenerateErrorReport());
         }
+    }
+    private void GetUsername(string playFabId)
+    {
+        var request = new GetAccountInfoRequest
+        {
+            PlayFabId = playFabId
+        };
+
+        PlayFabClientAPI.GetAccountInfo(request, OnGetAccountInfoSuccess, OnGetAccountInfoFailure);
+    }
+
+    private void OnGetAccountInfoSuccess(GetAccountInfoResult result)
+    {
+        username = result.AccountInfo.Username;
+        Debug.Log("Username: " + username);
+    }
+
+    private void OnGetAccountInfoFailure(PlayFabError error)
+    {
+        Debug.LogError("Failed to get account info: ");
+    }
+    
+    public void CreateMeeting(string meetingID, string meetingPassword)
+    {
+        string memberID = username;
+        var request = new CreateSharedGroupRequest
+        {
+            SharedGroupId = meetingID
+        };
+
+        PlayFabClientAPI.CreateSharedGroup(request, result =>
+        {
+            Debug.Log($"Meeting {meetingID} created with ID: {meetingID}");
+            StoreMeetingData(meetingID, meetingPassword, memberID);
+        }, error =>
+        {
+            Debug.LogError("Failed to create meeting: " + error.GenerateErrorReport());
+        });
+    }
+
+    private void StoreMeetingData(string meetingID, string meetingPassword, string memberID)
+    {
+        var request = new UpdateSharedGroupDataRequest
+        {
+            SharedGroupId = meetingID,
+            Data = new Dictionary<string, string>
+            {
+                { "Password", meetingPassword},
+                { "HostMemberID", memberID},
+                { memberID,  "[]"} // Empty members list
+            }
+        };
+
+        PlayFabClientAPI.UpdateSharedGroupData(request, result =>
+        {
+            Debug.Log("Meeting info stored successfully!");
+        }, error =>
+        {
+            Debug.LogError("Failed to store meeting info: " + error.GenerateErrorReport());
+        });
     }
 }
