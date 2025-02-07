@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
@@ -57,7 +58,8 @@ namespace XRMultiplayer
                 // Check for ParrelSync
                 playerId += CheckParrelSync();
 #endif
-#endif
+#endif          
+                playerId += DateTime.Now.ToString("yyyyMMddHHmmssfff");
                 // Check for command line args in builds
                 if (!Application.isEditor && m_UseCommandLineArgs)
                 {

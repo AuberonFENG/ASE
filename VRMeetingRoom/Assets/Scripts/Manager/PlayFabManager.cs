@@ -27,6 +27,27 @@ public class PlayFabManager : MonoBehaviour
         PlayFabClientAPI.LoginWithPlayFab(LoginRequest,OnLoginSuccess,OnLoginFailure);
     }
 
+    public void CreateMeeting(string password)
+    {
+        string meetingID = System.Guid.NewGuid().ToString().Substring(0, 8);
+
+        var request = new ExecuteCloudScriptRequest
+        {
+            FunctionName = "createMeetingForUser",
+            FunctionParameter = new Dictionary<string, object>
+            {
+                { "PlayFabId", "2DB02A9D139018A" },
+                { "MeetingID", meetingID },
+                { "MeetingPassword", password }
+            }
+        };
+
+        PlayFabClientAPI.ExecuteCloudScript(request,
+            result => Debug.Log($"会议创建成功！ID: {meetingID}"),
+            error => Debug.LogError("会议创建失败: " + error.ErrorMessage));
+    }
+    
+
     private void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         Debug.Log("RegisterSuccess");

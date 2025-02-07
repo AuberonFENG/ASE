@@ -2,33 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class SigninPanel : MonoBehaviour
+using TMPro;
+
+public class LogInPanel : MonoBehaviour
 {
-    public PlayFabSignInRequest signinRequest;
     public PlayFabLogInRequest logInRequest;
-    public InputField username, password;
-    public Button signinButton;
+    public TMP_InputField username, password;
     public Button logInButton;
     
     private void Start()
     {
         username.text = "";
         password.text = "";
-        signinButton.onClick.AddListener(OnSigninClick);
         logInButton.onClick.AddListener(OnLoginClick);
     }
-
-    private void OnSigninClick()
-    {
-        Debug.Log(username.text + " " + password.text);
-        if (username.text == "" || password.text == "")
-        {
-            Debug.Log("");
-            return;
-        }
-        signinRequest.GetUserInfo(username.text, password.text);
-    }
-
     private void OnLoginClick()
     {
         if (username.text == "" || password.text == "")
