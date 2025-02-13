@@ -18,7 +18,7 @@ MonoBehaviour:
   SelectedStudio: GAME STUDIO
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
-  LocalCloudScriptPath: /Users/jerry/ASE/VRMeetingRoom/Assets/PlayFabEditorExtensions/Editor/Resources/.CloudScript.js
+  LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 4
+  curMainMenuIdx: 0
   curSubMenuIdx: 0
