@@ -1,54 +1,80 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // 导入 TextMeshPro 命名空间
+using TMPro;
+using UnityEngine.UI; // To handle Button interactions
 
-public class Change_Text : MonoBehaviour
+public class ChangeText : MonoBehaviour
 {
-    
-    public TextMeshProUGUI textDisplay; // 用于引用 TextMeshProUGUI 组件
-    public string text1 = "Hello World!"; // 第一条文本
-    public string text2 = "Welcome to Unity!"; // 第二条文本
-    private bool isText1 = true; // 用于跟踪当前显示的文本
+    public List<Button> buttons; // Reference to all buttons in the container
+    public List<string> texts1;  // First set of texts
+    public List<string> texts2;  // Second set of texts
+    private List<bool> isText1 = new List<bool> { true, true, true, true, true, true }; // Tracks which set of texts is active
 
     void Start()
     {
-        // 确保 TextMeshProUGUI 组件已经正确引用
-        if (textDisplay == null)
-            textDisplay = GetComponentInChildren<TextMeshProUGUI>();
 
-        // 初始显示第一条文本
-        if (textDisplay != null)
+        // Ensure the number of texts matches the buttons
+        if (buttons.Count != texts1.Count || buttons.Count != texts2.Count)
         {
-            textDisplay.text = text1;
+            Debug.LogError("The number of buttons and texts do not match!");
+            return;
         }
-        else
-        {
-            Debug.LogError("TextMeshProUGUI component not assigned or found!");
-        }
-    }
 
-    public void SwitchText()
-    {
-        // 切换文本内容
-        if (textDisplay != null)
+        // Initialize texts
+        //texts1 = new List<string> { "File", "Mute", "Share Screen", "Share Camera", "Chat", "Exit Meeting" }; // Initial button texts
+        //texts2 = new List<string> { "File", "Unmute", "Stop Sharing Screen", "Stop Sharing Camera", "Chat", "Exit Meeting" }; // Text when clicked
+
+
+
+        // Initialize button texts
+        for (int i = 0; i < buttons.Count; i++)
         {
-            if (isText1)
+            TextMeshProUGUI textDisplay = buttons[i].GetComponentInChildren<TextMeshProUGUI>();
+            if (textDisplay != null)
             {
-                textDisplay.text = text2;
-                isText1 = false;
+                textDisplay.text = texts1[i]; // Set initial text
             }
             else
             {
-                textDisplay.text = text1;
-                isText1 = true;
+                Debug.LogError($"Button {i} does not have a TextMeshProUGUI component!");
             }
+
+            // Add a click listener for each button (optional behavior per button)
+            int index = i; // Capture the current index for use in the lambda
+            buttons[i].onClick.AddListener(() => SwitchAllTexts(index));
         }
     }
 
-    public void ShowFile_UI()
+    public void SwitchAllTexts(int index)
     {
 
+        Debug.Log($"Buttons Count: {buttons.Count}, Texts1 Count: {texts1.Count}, Texts2 Count: {texts2.Count}");
+        Debug.Log($"Button content:{buttons}");
+        TextMeshProUGUI textDisplay = buttons[index].GetComponentInChildren<TextMeshProUGUI>();
+        Debug.Log($"Button text:{textDisplay.text}");
+        textDisplay.text = isText1[index] ? texts2[index] : texts1[index];
+        isText1[index] = !isText1[index];
+        //// Toggle texts for all buttons
+        //for (int i = 0; i < buttons.Count; i++)
+        //{
+        //    TextMeshProUGUI textDisplay = buttons[i].GetComponentInChildren<TextMeshProUGUI>();
+        //    if (textDisplay != null)
+        //    {
+        //        textDisplay.text = isText1 ? texts2[i] : texts1[i];
+        //    }
+        //}
+        //isText1 = !isText1; // Flip the state
     }
 
+    private void OnButtonClick(int index)
+    {
+        // Example: Perform an action specific to the clicked button
+        Debug.Log($"Button {index} clicked!");
+        TextMeshProUGUI textDisplay = buttons[index].GetComponentInChildren<TextMeshProUGUI>();
+        if (textDisplay != null)
+        {
+            textDisplay.text = isText1[index] ? texts2[index] : texts1[index];
+        }
+    }
 }
