@@ -1,0 +1,7 @@
+{
+	"name": "Change_Text",
+	"references": [
+		"Unity.TextMeshPro",
+		"UnityEngine.UI"
+	]
+}
