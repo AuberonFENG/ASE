@@ -4617,7 +4617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &883451010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7495,7 +7495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1380991825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11637,6 +11637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c0ab6e6f4ea0c4cb4f1d3a7ae83b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  createMeetingRequest: {fileID: 0}
+  meetingPassword: {fileID: 0}
+  createMeetingButton: {fileID: 0}
 --- !u!114 &2112957785
 MonoBehaviour:
   m_ObjectHideFlags: 0

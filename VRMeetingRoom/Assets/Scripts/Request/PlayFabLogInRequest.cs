@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayFabLogInRequest : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PlayFabLogInRequest : MonoBehaviour
     public void GetUserInfo(string username,string password)
     {
         playerFabManager.Login(username,password);
-        this.gameObject.SetActive(false);
-        MeetingChoice.gameObject.SetActive(true);
+        SceneManager.LoadScene("SampleScene");
+
     }
 }
