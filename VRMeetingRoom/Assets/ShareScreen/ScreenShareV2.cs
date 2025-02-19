@@ -67,7 +67,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
                 UpdateShareBtn.gameObject.SetActive(false);
 #endif
             }
-            JoinChannel();
         }
 
         private bool CheckAppId()
@@ -141,9 +140,10 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
             ret = RtcEngine.UpdateChannelMediaOptions(options);
             Debug.Log("UpdateChannelMediaOptions returns: " + ret);
-
-            PublishBtn.gameObject.SetActive(false);
-            UnpublishBtn.gameObject.SetActive(true);
+            if(PublishBtn != null)
+                PublishBtn.gameObject.SetActive(false);
+            if(UnpublishBtn != null)
+                UnpublishBtn.gameObject.SetActive(true);
         }
 
         public void OnUnplishButtonClick()
@@ -227,9 +227,10 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             }
 
 #endif
-
-            PublishBtn.gameObject.SetActive(true);
-            UnpublishBtn.gameObject.SetActive(true);
+            if (PublishBtn != null)
+                PublishBtn.gameObject.SetActive(true);
+            if (UnpublishBtn != null)
+                UnpublishBtn.gameObject.SetActive(true);
             //OnPublishButtonClick();
             ScreenShareV2.MakeVideoView(0, "", VIDEO_SOURCE_TYPE.VIDEO_SOURCE_SCREEN);
 
@@ -240,12 +241,19 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             if (StartShareBtn != null) StartShareBtn.gameObject.SetActive(true);
             if (StopShareBtn != null) StopShareBtn.gameObject.SetActive(false);
 
-
-            PublishBtn.gameObject.SetActive(false);
-            UnpublishBtn.gameObject.SetActive(false);
+            if (PublishBtn != null)
+                PublishBtn.gameObject.SetActive(false);
+            if (UnpublishBtn != null)
+                UnpublishBtn.gameObject.SetActive(false);
 
             DestroyVideoView(0);
             RtcEngine.StopScreenCapture();
+        }
+
+        public void OnConfirmButtonClicked()
+        {
+            OnStartShareBtnClick();
+            OnPublishButtonClick();
         }
 
         public void OnUpdateShareBtnClick()
