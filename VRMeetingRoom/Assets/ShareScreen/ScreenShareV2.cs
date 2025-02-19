@@ -45,7 +45,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         public RawImage ThumbImage;
 
         private Rect _originThumRect = new Rect(0, 0, 500, 260);
-        private Rect _originIconRect = new Rect(0, 0, 289, 280);
+        private Rect _originIconRect = new Rect(0, 0, 50, 50);
 
         // Use this for initialization
         private void Start()
@@ -163,6 +163,12 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             UnpublishBtn.gameObject.SetActive(false);
         }
 
+        public void OnWinSelectChanged()
+        {
+            OnShowThumbButtonClick();
+            OnShowIconButtonClick();
+        }
+
         public void PrepareScreenCapture()
         {
             if (WinIdSelect == null || RtcEngine == null) return;
@@ -181,6 +187,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
                     new Dropdown.OptionData(
                         string.Format("{0}: {1}-{2} | {3}", w.type, w.sourceName, w.sourceTitle, w.sourceId)))
                 .ToList());
+            OnWinSelectChanged();
         }
 
         public void OnStartShareBtnClick()
