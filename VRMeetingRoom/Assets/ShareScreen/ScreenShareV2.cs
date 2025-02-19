@@ -64,7 +64,8 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
                 ShowThumbBtn.gameObject.SetActive(false);
                 ShowIconBtn.gameObject.SetActive(false);
 #else
-                UpdateShareBtn.gameObject.SetActive(false);
+                if (UpdateShareBtn != null)
+                    UpdateShareBtn.gameObject.SetActive(false);
 #endif
             }
         }
