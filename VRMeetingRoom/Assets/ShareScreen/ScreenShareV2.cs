@@ -121,26 +121,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public void OnPublishButtonClick()
         {
-            int ret = 0;
-            ChannelMediaOptions options = new ChannelMediaOptions();
-            options.publishCameraTrack.SetValue(false);
-            options.publishScreenTrack.SetValue(true);
-
-#if UNITY_ANDROID || UNITY_IPHONE
-            options.publishScreenCaptureAudio.SetValue(true);
-            options.publishScreenCaptureVideo.SetValue(true);
-#endif
-
-
-#if UNITY_EDITOR_WIN || UNITY_EDITOR_OSX || UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX
-            //If you want to share audio when sharing the desktop screen, you need to use this interface.
-            //For details, please refer to the annotation of this interface
-            //ret = RtcEngine.EnableLoopbackRecording(true, "");
-            //Debug.Log("EnableLoopbackRecording returns: " + ret);
-#endif
-
-            ret = RtcEngine.UpdateChannelMediaOptions(options);
-            Debug.Log("UpdateChannelMediaOptions returns: " + ret);
+            Publish();
             if(PublishBtn != null)
                 PublishBtn.gameObject.SetActive(false);
             if(UnpublishBtn != null)
@@ -166,8 +147,8 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public void OnWinSelectChanged()
         {
-            OnShowThumbButtonClick();
-            OnShowIconButtonClick();
+            ShowThumbnail();
+            ShowIcon();
         }
 
         public void PrepareScreenCapture()
@@ -192,6 +173,106 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         }
 
         public void OnStartShareBtnClick()
+        {
+            StartShare();
+            if (PublishBtn != null)
+                PublishBtn.gameObject.SetActive(true);
+            if (UnpublishBtn != null)
+                UnpublishBtn.gameObject.SetActive(true);
+            //OnPublishButtonClick();
+        }
+
+        public void OnStopShareBtnClick()
+        {
+            if (StartShareBtn != null) StartShareBtn.gameObject.SetActive(true);
+            if (StopShareBtn != null) StopShareBtn.gameObject.SetActive(false);
+
+            if (PublishBtn != null)
+                PublishBtn.gameObject.SetActive(false);
+            if (UnpublishBtn != null)
+                UnpublishBtn.gameObject.SetActive(false);
+
+            DestroyVideoView(0);
+            RtcEngine.StopScreenCapture();
+        }
+
+        public void OnConfirmButtonClicked()
+        {
+            StartShare();
+            Publish();
+        }
+
+        public void OnUpdateShareBtnClick()
+        {
+            //only work in ios or android
+            var config = new ScreenCaptureParameters2();
+            config.captureAudio = true;
+            config.captureVideo = true;
+            config.videoParams.dimensions.width = 960;
+            config.videoParams.dimensions.height = 640;
+            var nRet = RtcEngine.UpdateScreenCapture(config);
+            this.Log.UpdateLog("UpdateScreenCapture: " + nRet);
+        }
+
+        public void OnShowThumbButtonClick()
+        {
+            ShowThumbnail();
+        }
+
+        public void OnShowIconButtonClick()
+        {
+            ShowIcon();
+        }
+
+        private void ShowThumbnail()
+        {
+            if (ThumbImage.texture)
+            {
+                GameObject.Destroy(ThumbImage.texture);
+                ThumbImage.texture = null;
+            }
+            ThumbImageBuffer thumbImageBuffer = _screenCaptureSourceInfos[WinIdSelect.value].thumbImage;
+            if (thumbImageBuffer.buffer.Length == 0) return;
+            Texture2D texture = null;
+#if UNITY_STANDALONE_OSX
+            texture = new Texture2D((int)thumbImageBuffer.width, (int)thumbImageBuffer.height, TextureFormat.RGBA32, false);
+#elif UNITY_STANDALONE_WIN
+            texture = new Texture2D((int)thumbImageBuffer.width, (int)thumbImageBuffer.height, TextureFormat.BGRA32, false);
+#endif
+            texture.LoadRawTextureData(thumbImageBuffer.buffer);
+            texture.Apply();
+            ThumbImage.texture = texture;
+
+            float scale = Math.Min((float)_originThumRect.width / (float)thumbImageBuffer.width, (float)_originThumRect.height / (float)thumbImageBuffer.height);
+            ThumbImage.rectTransform.sizeDelta = new Vector2(thumbImageBuffer.width * scale, thumbImageBuffer.height * scale);
+        }
+
+        private void ShowIcon()
+        {
+            if (IconImage.texture)
+            {
+                GameObject.Destroy(IconImage.texture);
+                IconImage.texture = null;
+            }
+            ThumbImageBuffer iconImageBuffer = _screenCaptureSourceInfos[WinIdSelect.value].iconImage;
+            if (iconImageBuffer.buffer.Length == 0) return;
+            Texture2D texture = null;
+#if UNITY_STANDALONE_OSX
+            texture = new Texture2D((int)iconImageBuffer.width, (int)iconImageBuffer.height, TextureFormat.RGBA32, false);
+#elif UNITY_STANDALONE_WIN
+            texture = new Texture2D((int)iconImageBuffer.width, (int)iconImageBuffer.height, TextureFormat.BGRA32, false);
+#endif
+            texture.LoadRawTextureData(iconImageBuffer.buffer);
+            texture.Apply();
+            IconImage.texture = texture;
+
+
+            float scale = Math.Min((float)_originIconRect.width / (float)iconImageBuffer.width, (float)_originIconRect.height / (float)iconImageBuffer.height);
+            IconImage.rectTransform.sizeDelta = new Vector2(iconImageBuffer.width * scale, iconImageBuffer.height * scale);
+
+        }
+
+        private void StartShare()
         {
             if (RtcEngine == null) return;
 
@@ -228,93 +309,35 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             }
 
 #endif
-            if (PublishBtn != null)
-                PublishBtn.gameObject.SetActive(true);
-            if (UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(true);
-            //OnPublishButtonClick();
             ScreenShareV2.MakeVideoView(0, "", VIDEO_SOURCE_TYPE.VIDEO_SOURCE_SCREEN);
-
         }
 
-        public void OnStopShareBtnClick()
+        private void Publish()
         {
-            if (StartShareBtn != null) StartShareBtn.gameObject.SetActive(true);
-            if (StopShareBtn != null) StopShareBtn.gameObject.SetActive(false);
+            int ret = 0;
+            ChannelMediaOptions options = new ChannelMediaOptions();
+            options.publishCameraTrack.SetValue(false);
+            options.publishScreenTrack.SetValue(true);
 
+#if UNITY_ANDROID || UNITY_IPHONE
+            options.publishScreenCaptureAudio.SetValue(true);
+            options.publishScreenCaptureVideo.SetValue(true);
+#endif
+
+
+#if UNITY_EDITOR_WIN || UNITY_EDITOR_OSX || UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX
+            //If you want to share audio when sharing the desktop screen, you need to use this interface.
+            //For details, please refer to the annotation of this interface
+            //ret = RtcEngine.EnableLoopbackRecording(true, "");
+            //Debug.Log("EnableLoopbackRecording returns: " + ret);
+#endif
+
+            ret = RtcEngine.UpdateChannelMediaOptions(options);
+            Debug.Log("UpdateChannelMediaOptions returns: " + ret);
             if (PublishBtn != null)
                 PublishBtn.gameObject.SetActive(false);
             if (UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(false);
-
-            DestroyVideoView(0);
-            RtcEngine.StopScreenCapture();
-        }
-
-        public void OnConfirmButtonClicked()
-        {
-            OnStartShareBtnClick();
-            OnPublishButtonClick();
-        }
-
-        public void OnUpdateShareBtnClick()
-        {
-            //only work in ios or android
-            var config = new ScreenCaptureParameters2();
-            config.captureAudio = true;
-            config.captureVideo = true;
-            config.videoParams.dimensions.width = 960;
-            config.videoParams.dimensions.height = 640;
-            var nRet = RtcEngine.UpdateScreenCapture(config);
-            this.Log.UpdateLog("UpdateScreenCapture: " + nRet);
-        }
-
-        public void OnShowThumbButtonClick()
-        {
-            if (ThumbImage.texture)
-            {
-                GameObject.Destroy(ThumbImage.texture);
-                ThumbImage.texture = null;
-            }
-            ThumbImageBuffer thumbImageBuffer = _screenCaptureSourceInfos[WinIdSelect.value].thumbImage;
-            if (thumbImageBuffer.buffer.Length == 0) return;
-            Texture2D texture = null;
-#if UNITY_STANDALONE_OSX
-            texture = new Texture2D((int)thumbImageBuffer.width, (int)thumbImageBuffer.height, TextureFormat.RGBA32, false);
-#elif UNITY_STANDALONE_WIN
-            texture = new Texture2D((int)thumbImageBuffer.width, (int)thumbImageBuffer.height, TextureFormat.BGRA32, false);
-#endif
-            texture.LoadRawTextureData(thumbImageBuffer.buffer);
-            texture.Apply();
-            ThumbImage.texture = texture;
-
-            float scale = Math.Min((float)_originThumRect.width / (float)thumbImageBuffer.width, (float)_originThumRect.height / (float)thumbImageBuffer.height);
-            ThumbImage.rectTransform.sizeDelta = new Vector2(thumbImageBuffer.width * scale, thumbImageBuffer.height * scale);
-        }
-
-        public void OnShowIconButtonClick()
-        {
-            if (IconImage.texture)
-            {
-                GameObject.Destroy(IconImage.texture);
-                IconImage.texture = null;
-            }
-            ThumbImageBuffer iconImageBuffer = _screenCaptureSourceInfos[WinIdSelect.value].iconImage;
-            if (iconImageBuffer.buffer.Length == 0) return;
-            Texture2D texture = null;
-#if UNITY_STANDALONE_OSX
-            texture = new Texture2D((int)iconImageBuffer.width, (int)iconImageBuffer.height, TextureFormat.RGBA32, false);
-#elif UNITY_STANDALONE_WIN
-            texture = new Texture2D((int)iconImageBuffer.width, (int)iconImageBuffer.height, TextureFormat.BGRA32, false);
-#endif
-            texture.LoadRawTextureData(iconImageBuffer.buffer);
-            texture.Apply();
-            IconImage.texture = texture;
-
-
-            float scale = Math.Min((float)_originIconRect.width / (float)iconImageBuffer.width, (float)_originIconRect.height / (float)iconImageBuffer.height);
-            IconImage.rectTransform.sizeDelta = new Vector2(iconImageBuffer.width * scale, iconImageBuffer.height * scale);
-
+                UnpublishBtn.gameObject.SetActive(true);
         }
 
         #endregion
