@@ -327,7 +327,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShare
             }
 
             // create a GameObject and assign to this new user
-            var videoSurface = MakeImageSurface(uid.ToString());
+            var videoSurface = MakePlaneSurface(uid.ToString());
             if (ReferenceEquals(videoSurface, null)) return;
             // configure videoSurface
             videoSurface.SetForUser(uid, channelId, videoSourceType);
@@ -371,7 +371,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShare
             }
             // set up transform
             go.transform.Rotate(-90.0f, 0.0f, 0.0f);
-            go.transform.position = Vector3.zero;
+            go.transform.position = new Vector3(0.0f, 3.241f, 0.0f);
             go.transform.localScale = new Vector3(0.25f, 0.5f, .5f);
 
             // configure videoSurface
