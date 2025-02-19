@@ -476,7 +476,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public override void OnLeaveChannel(RtcConnection connection, RtcStats stats)
         {
-            _desktopScreenShare.Log.UpdateLog("OnLeaveChannel");
+            _desktopScreenShare.Log.UpdateLog(string.Format("OnLeaveChannel: {0}", connection.localUid));
             ScreenShareV2.DestroyVideoView(connection.localUid);
         }
 
