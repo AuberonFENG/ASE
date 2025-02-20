@@ -19,4 +19,4 @@ MemoryCaptures/
 *.pdb
 *.opendb
 .vs/
-ProjectSettings/Packages/**/Settings.json
+VRMeetingRoom/ProjectSettings/Packages/**/Settings.json
