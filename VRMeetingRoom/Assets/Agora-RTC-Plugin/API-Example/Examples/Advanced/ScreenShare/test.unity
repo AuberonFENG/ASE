@@ -382,7 +382,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1538028205}
         m_TargetAssemblyTypeName: Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2.ScreenShareV2,
           Assembly-CSharp
-        m_MethodName: OnStopShareBtnClick
+        m_MethodName: StopShare
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3091,14 +3091,6 @@ MonoBehaviour:
   _channelName: 
   LogText: {fileID: 833469311}
   WinIdSelect: {fileID: 1122101107}
-  GetSourceBtn: {fileID: 0}
-  StartShareBtn: {fileID: 0}
-  StopShareBtn: {fileID: 0}
-  UpdateShareBtn: {fileID: 0}
-  PublishBtn: {fileID: 0}
-  UnpublishBtn: {fileID: 0}
-  ShowThumbBtn: {fileID: 0}
-  ShowIconBtn: {fileID: 0}
   IconImage: {fileID: 851381515}
   ThumbImage: {fileID: 82625305}
 --- !u!4 &1538028206

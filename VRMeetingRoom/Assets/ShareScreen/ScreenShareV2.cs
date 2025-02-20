@@ -33,14 +33,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         private ScreenCaptureSourceInfo[] _screenCaptureSourceInfos;
 
         public Dropdown WinIdSelect;
-        public Button GetSourceBtn;
-        public Button StartShareBtn;
-        public Button StopShareBtn;
-        public Button UpdateShareBtn;
-        public Button PublishBtn;
-        public Button UnpublishBtn;
-        public Button ShowThumbBtn;
-        public Button ShowIconBtn;
         public RawImage IconImage;
         public RawImage ThumbImage;
 
@@ -56,16 +48,11 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
                 InitEngine();
                 SetBasicConfiguration();
 #if UNITY_ANDROID || UNITY_IPHONE
-                GetSourceBtn.gameObject.SetActive(false);
                 WinIdSelect.gameObject.SetActive(false);
-                UpdateShareBtn.gameObject.SetActive(true);
                 IconImage.gameObject.SetActive(false);
                 ThumbImage.gameObject.SetActive(false);
-                ShowThumbBtn.gameObject.SetActive(false);
-                ShowIconBtn.gameObject.SetActive(false);
 #else
-                if (UpdateShareBtn != null)
-                    UpdateShareBtn.gameObject.SetActive(false);
+
 #endif
             }
         }
@@ -119,31 +106,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             RtcEngine.LeaveChannel();
         }
 
-        public void OnPublishButtonClick()
-        {
-            Publish();
-            if(PublishBtn != null)
-                PublishBtn.gameObject.SetActive(false);
-            if(UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(true);
-        }
-
-        public void OnUnplishButtonClick()
-        {
-            ChannelMediaOptions options = new ChannelMediaOptions();
-            options.publishCameraTrack.SetValue(true);
-            options.publishScreenTrack.SetValue(false);
-
-#if UNITY_ANDROID || UNITY_IPHONE
-            options.publishScreenCaptureAudio.SetValue(false);
-            options.publishScreenCaptureVideo.SetValue(false);
-#endif
-            var ret = RtcEngine.UpdateChannelMediaOptions(options);
-            Debug.Log("UpdateChannelMediaOptions returns: " + ret);
-
-            PublishBtn.gameObject.SetActive(true);
-            UnpublishBtn.gameObject.SetActive(false);
-        }
 
         public void OnWinSelectChanged()
         {
@@ -172,29 +134,23 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             OnWinSelectChanged();
         }
 
-        public void OnStartShareBtnClick()
+        public void StopShare()
         {
-            StartShare();
-            if (PublishBtn != null)
-                PublishBtn.gameObject.SetActive(true);
-            if (UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(true);
-            //OnPublishButtonClick();
-        }
-
-        public void OnStopShareBtnClick()
-        {
-            if (StartShareBtn != null) StartShareBtn.gameObject.SetActive(true);
-            if (StopShareBtn != null) StopShareBtn.gameObject.SetActive(false);
-
-            if (PublishBtn != null)
-                PublishBtn.gameObject.SetActive(false);
-            if (UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(false);
-
             DestroyVideoView(0);
             RtcEngine.StopScreenCapture();
+            ChannelMediaOptions options = new ChannelMediaOptions();
+            options.publishCameraTrack.SetValue(true);
+            options.publishScreenTrack.SetValue(false);
+
+#if UNITY_ANDROID || UNITY_IPHONE
+            options.publishScreenCaptureAudio.SetValue(false);
+            options.publishScreenCaptureVideo.SetValue(false);
+#endif
+            var ret = RtcEngine.UpdateChannelMediaOptions(options);
+            Debug.Log("UpdateChannelMediaOptions returns: " + ret);
         }
+
+
 
         public void OnConfirmButtonClicked()
         {
@@ -202,27 +158,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             Publish();
         }
 
-        public void OnUpdateShareBtnClick()
-        {
-            //only work in ios or android
-            var config = new ScreenCaptureParameters2();
-            config.captureAudio = true;
-            config.captureVideo = true;
-            config.videoParams.dimensions.width = 960;
-            config.videoParams.dimensions.height = 640;
-            var nRet = RtcEngine.UpdateScreenCapture(config);
-            this.Log.UpdateLog("UpdateScreenCapture: " + nRet);
-        }
-
-        public void OnShowThumbButtonClick()
-        {
-            ShowThumbnail();
-        }
-
-        public void OnShowIconButtonClick()
-        {
-            ShowIcon();
-        }
 
         private void ShowThumbnail()
         {
@@ -276,8 +211,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         {
             if (RtcEngine == null) return;
 
-            if (StartShareBtn != null) StartShareBtn.gameObject.SetActive(false);
-            if (StopShareBtn != null) StopShareBtn.gameObject.SetActive(true);
 
 #if UNITY_ANDROID || UNITY_IPHONE
             var parameters2 = new ScreenCaptureParameters2();
@@ -334,10 +267,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
             ret = RtcEngine.UpdateChannelMediaOptions(options);
             Debug.Log("UpdateChannelMediaOptions returns: " + ret);
-            if (PublishBtn != null)
-                PublishBtn.gameObject.SetActive(false);
-            if (UnpublishBtn != null)
-                UnpublishBtn.gameObject.SetActive(true);
         }
 
         #endregion
