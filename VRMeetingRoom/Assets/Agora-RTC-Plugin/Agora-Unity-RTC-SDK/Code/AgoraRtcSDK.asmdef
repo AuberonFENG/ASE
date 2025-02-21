@@ -1,4 +1,14 @@
 {
-	"name": "AgoraRtcSDK",
-	"allowUnsafeCode": true
+    "name": "AgoraRtcSDK",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

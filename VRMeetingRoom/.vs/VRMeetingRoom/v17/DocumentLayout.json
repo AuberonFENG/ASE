@@ -1,58 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\",
+  "WorkspaceRootPath": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|e:\\study\\cs7cs3 \u2013 advanced software engineering\\vrmeetingroom\\vrmeetingroom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Change_Text.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Tests.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Tests\\Tests.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Change_Text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A7CFFFB-3D1A-C82C-25A2-CE5DC5948E77}|Change_Text.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\assets\\scripts\\change_text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A7CFFFB-3D1A-C82C-25A2-CE5DC5948E77}|Change_Text.csproj|solutionrelative:assets\\scripts\\change_text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,164 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Change_Text.asmdef",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.asmdef",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Change_Text.asmdef",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.asmdef",
-              "RelativeToolTip": "Assets\\Scripts\\Change_Text.asmdef",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-13T16:09:09.932Z"
+              "Title": "Change_Text.cs",
+              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Change_Text.cs",
+              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Change_Text.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T14:40:32.459Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Host_Desktop_UI_ChangeText_Test.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs",
-              "RelativeDocumentMoniker": "Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs",
-              "RelativeToolTip": "Assets\\Tests\\Host_Desktop_UI_ChangeText_Test.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T15:53:52.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tests.asmdef",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Tests.asmdef",
-              "RelativeDocumentMoniker": "Assets\\Tests\\Tests.asmdef",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Tests\\Tests.asmdef",
-              "RelativeToolTip": "Assets\\Tests\\Tests.asmdef",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-13T15:33:48.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef",
-              "RelativeDocumentMoniker": "Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef",
-              "RelativeToolTip": "Assets\\Samples\\XR Interaction Toolkit\\3.0.5\\Starter Assets\\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-10T17:50:41.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OfflineMenu.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
-              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T17:35:47.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Change_Text.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Change_Text.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Scripts\\Change_Text.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Change_Text.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T15:25:04.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "JoinChannelVideo.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
               "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
               "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:20:39.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NetworkedMaterial.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
-              "RelativeDocumentMoniker": "Assets\\NetworkedMaterial.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
-              "RelativeToolTip": "Assets\\NetworkedMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:10:48.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NetworkMaterial.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
-              "RelativeDocumentMoniker": "Assets\\NetworkMaterial.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
-              "RelativeToolTip": "Assets\\NetworkMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:06:28.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientNetworkTransform.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
-              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
-              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:59:08.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NetworkedSlider.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
-              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
-              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:28:48.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "NetworkedDropdown.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
-              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
-              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:46:09.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AuthenticationManager.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
-              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
-              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAawD0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:35:52.783Z"
+              "WhenOpened": "2025-02-21T14:27:21.775Z",
+              "EditorCaption": ""
             }
           ]
         }

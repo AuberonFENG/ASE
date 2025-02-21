@@ -1413,7 +1413,7 @@ namespace Agora.Rtm.LitJson
             };
             RegisterImporter(custom_importers_table,
                typeof(Optional<string>), typeof(string), importer);
-
+/*
 #if AGORA_RTC
             //enum CLIENT_ROLE_TYPE
             importer = delegate (object input)
@@ -1513,6 +1513,7 @@ namespace Agora.Rtm.LitJson
               typeof(Optional<THREAD_PRIORITY_TYPE>), typeof(long), importer);
 
 #endif
+*/
             //InPtr
             importer = delegate (object input)
             {

@@ -12,6 +12,7 @@ namespace Agora.Rtm
 #endif
 {
     internal sealed class AgoraCallbackObject
+    //public sealed class AgoraCallbackObject
     {
         private GameObject _CallbackGameObject;
         internal AgoraCallbackQueue _CallbackQueue;

@@ -4,12 +4,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI; // To handle Button interactions
 
+
+
 public class ChangeText : MonoBehaviour
 {
     public List<Button> buttons; // Reference to all buttons in the container
     public List<string> texts1;  // First set of texts
     public List<string> texts2;  // Second set of texts
     private List<bool> isText1 = new List<bool> { true, true, true, true, true, true }; // Tracks which set of texts is active
+
 
     void Start()
     {
@@ -34,8 +37,7 @@ public class ChangeText : MonoBehaviour
             if (textDisplay != null)
             {
                 textDisplay.text = texts1[i]; // Set initial text
-            }
-            else
+            }            else
             {
                 Debug.LogError($"Button {i} does not have a TextMeshProUGUI component!");
             }
