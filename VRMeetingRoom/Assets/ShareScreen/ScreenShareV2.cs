@@ -27,9 +27,11 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         [SerializeField]
         private string _channelName = "";
 
+        private string _channelNameScreen = "";
+
         public Text LogText;
         internal Logger Log;
-        internal IRtcEngine RtcEngine = null;
+        internal IRtcEngineEx RtcEngine = null;
         private ScreenCaptureSourceInfo[] _screenCaptureSourceInfos;
 
         public Dropdown WinIdSelect;
@@ -38,6 +40,9 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         private Rect _originThumRect = new Rect(0, 0, 500, 260);
         private Rect _originIconRect = new Rect(0, 0, 50, 50);
+
+        public uint localUid;
+        public uint localUidEx = 111;
 
         // Use this for initialization
         private void Start()
@@ -71,11 +76,16 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             _appID = _appIdInput.appID;
             _token = _appIdInput.token;
             _channelName = _appIdInput.channelName;
+            _channelNameScreen = _channelName;
+
+            //TODO uid ex should base on the callback from joinChannel, instead of randomly generating one.
+            System.Random random = new System.Random();
+            localUidEx = (uint)random.Next(1, int.MaxValue); // Ensure min is at least 1
         }
 
         private void InitEngine()
         {
-            RtcEngine = Agora.Rtc.RtcEngine.CreateAgoraRtcEngine();
+            RtcEngine = Agora.Rtc.RtcEngine.CreateAgoraRtcEngineEx();
             UserEventHandler handler = new UserEventHandler(this);
             RtcEngineContext context = new RtcEngineContext();
             context.appId = _appID;
@@ -97,7 +107,21 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public void JoinChannel()
         {
-            var ret = RtcEngine.JoinChannel(_token, _channelName, "", 0);
+            //RtcEngine.JoinChannel(_token, _channelName, "", 0);
+
+            // Join an ex channel
+            ChannelMediaOptions options = new ChannelMediaOptions();
+            options.autoSubscribeAudio.SetValue(false);
+            options.autoSubscribeVideo.SetValue(true);
+            options.publishCameraTrack.SetValue(false);
+            options.publishScreenTrack.SetValue(false);
+            options.enableAudioRecordingOrPlayout.SetValue(false);
+#if UNITY_ANDROID || UNITY_IPHONE
+            options.publishScreenCaptureAudio.SetValue(false);
+            options.publishScreenCaptureVideo.SetValue(false);
+#endif
+            options.clientRoleType.SetValue(CLIENT_ROLE_TYPE.CLIENT_ROLE_BROADCASTER);
+            var ret = RtcEngine.JoinChannelEx(_token, new RtcConnection(_channelNameScreen, localUidEx), options);
             Debug.Log("JoinChannel returns: " + ret);
         }
 
@@ -138,15 +162,19 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         {
             DestroyVideoView(0);
             RtcEngine.StopScreenCapture();
+            // Join a channel and push the screen sharing stream
             ChannelMediaOptions options = new ChannelMediaOptions();
-            options.publishCameraTrack.SetValue(true);
-            options.publishScreenTrack.SetValue(false);
-
+            options.autoSubscribeAudio.SetValue(false);
+            options.autoSubscribeVideo.SetValue(true);
+            options.publishCameraTrack.SetValue(false);
+            options.publishScreenTrack.SetValue(true);
+            options.enableAudioRecordingOrPlayout.SetValue(false);
 #if UNITY_ANDROID || UNITY_IPHONE
-            options.publishScreenCaptureAudio.SetValue(false);
-            options.publishScreenCaptureVideo.SetValue(false);
+            options.publishScreenCaptureAudio.SetValue(true);
+            options.publishScreenCaptureVideo.SetValue(true);
 #endif
-            var ret = RtcEngine.UpdateChannelMediaOptions(options);
+            options.clientRoleType.SetValue(CLIENT_ROLE_TYPE.CLIENT_ROLE_BROADCASTER);
+            var ret = RtcEngine.UpdateChannelMediaOptionsEx(options, new RtcConnection(_channelNameScreen, localUidEx));
             Debug.Log("UpdateChannelMediaOptions returns: " + ret);
         }
 
@@ -247,26 +275,20 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         private void Publish()
         {
-            int ret = 0;
+            // Join a channel and push the screen sharing stream
             ChannelMediaOptions options = new ChannelMediaOptions();
+            options.autoSubscribeAudio.SetValue(false);
+            options.autoSubscribeVideo.SetValue(true);
             options.publishCameraTrack.SetValue(false);
             options.publishScreenTrack.SetValue(true);
-
+            options.enableAudioRecordingOrPlayout.SetValue(false);
 #if UNITY_ANDROID || UNITY_IPHONE
             options.publishScreenCaptureAudio.SetValue(true);
             options.publishScreenCaptureVideo.SetValue(true);
 #endif
+            options.clientRoleType.SetValue(CLIENT_ROLE_TYPE.CLIENT_ROLE_BROADCASTER);
+            RtcEngine.UpdateChannelMediaOptionsEx(options, new RtcConnection(_channelNameScreen, localUidEx));
 
-
-#if UNITY_EDITOR_WIN || UNITY_EDITOR_OSX || UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX
-            //If you want to share audio when sharing the desktop screen, you need to use this interface.
-            //For details, please refer to the annotation of this interface
-            //ret = RtcEngine.EnableLoopbackRecording(true, "");
-            //Debug.Log("EnableLoopbackRecording returns: " + ret);
-#endif
-
-            ret = RtcEngine.UpdateChannelMediaOptions(options);
-            Debug.Log("UpdateChannelMediaOptions returns: " + ret);
         }
 
         #endregion
@@ -440,15 +462,24 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public override void OnUserJoined(RtcConnection connection, uint uid, int elapsed)
         {
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserJoined uid: ${0} elapsed: ${1}", uid, elapsed));
-            ScreenShareV2.MakeVideoView(uid, _desktopScreenShare.GetChannelName(), VIDEO_SOURCE_TYPE.VIDEO_SOURCE_REMOTE);
+
+            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserJoined connection_uid: ${0}  uid: ${1} elapsed: ${2}", connection.localUid, uid, elapsed));
+            // check if joined the screen share ex channel
+            if (connection.localUid == _desktopScreenShare.localUidEx)
+            {
+                ScreenShareV2.MakeVideoView(uid, _desktopScreenShare.GetChannelName(), VIDEO_SOURCE_TYPE.VIDEO_SOURCE_REMOTE);
+            }
         }
 
         public override void OnUserOffline(RtcConnection connection, uint uid, USER_OFFLINE_REASON_TYPE reason)
         {
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserOffLine uid: ${0}, reason: ${1}", uid,
+            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserOffLine connection_uid: ${0} uid: ${1}, reason: ${2}", connection.localUid, uid,
                 (int)reason));
-            ScreenShareV2.DestroyVideoView(uid);
+            // check if joined the screen share ex channel
+            if (connection.localUid == _desktopScreenShare.localUidEx)
+            {
+                ScreenShareV2.DestroyVideoView(uid);
+            }
         }
     }
 
