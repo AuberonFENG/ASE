@@ -89,6 +89,7 @@ public class JoinChannelVideo : MonoBehaviour
         //LocalView = go.AddComponent<VideoSurface>();
         LocalView = showLocalView.AddComponent<VideoSurface>();
         showLocalView.transform.Rotate(0.0f, 0.0f, -180.0f);
+        showLocalView.SetActive(false); 
 
         //go = GameObject.Find("RemoteView");
         //RemoteView = go.AddComponent<VideoSurface>();
@@ -194,15 +195,15 @@ public class JoinChannelVideo : MonoBehaviour
         // 设置本地视频显示
         LocalView.SetForUser(0, "");
         // 渲染视频
+        showLocalView.SetActive(true);
         LocalView.SetEnable(true);
-
-
     }
 
     // 关闭本地视频流
     public void UnpublishVideo()
     {
         Debug.Log("Unpublishing video stream.");
+        showLocalView.SetActive(false);
         // 关闭推送本地视频流
         RtcEngine.MuteLocalVideoStream(true);
         // 停止本地预览
