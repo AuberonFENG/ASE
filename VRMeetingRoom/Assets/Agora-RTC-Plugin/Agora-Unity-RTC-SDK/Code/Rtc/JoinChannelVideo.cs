@@ -19,9 +19,9 @@ public class JoinChannelVideo : MonoBehaviour
     // 填入你的 app ID
     private string _appID = "5dbad5013ad24129a070b83a994f98f6";
     // 填入你的频道名
-    private string _channelName = "test0221";
+    private string _channelName = "test0224";
     // 填入 Token
-    private string _token = "007eJxTYPh+pLaz2stw7qWosu0vw4LX7uE4qnOYwc9iwp2f6geTV/YpMJimJCWmmBoYGiemGJkYGlkmGpgbJFkYJ1pamqRZWqSZ2dTtSG8IZGT4y2XHyMgAgSA+B0NJanGJgZGRIQMDACxCIPU=";
+    private string _token = "007eJxTYKiJn5D+57SArEefz4o6lc+Hvh38Fq3hl7Dsi+EV3qDl044qMJimJCWmmBoYGiemGJkYGlkmGpgbJFkYJ1pamqRZWqSZXUvck94QyMgwh6+HgREKQXwOhpLU4hIDIyMTBgYAK10hXQ==";
     internal VideoSurface LocalView;
 
     //internal VideoSurface RemoteView;

@@ -5,11 +5,19 @@ using UnityEngine.UI;
 using Agora.Rtc;
 using UnityEngine.Serialization;
 using io.agora.rtc.demo;
+using TMPro; 
 
 namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 {
+
+
     public class ScreenShareV2 : MonoBehaviour
     {
+        //button text listener
+        public Button button;
+        public TMP_Text buttonText; // Ê¹ÓÃ TMP_Text ´úÌæ Text
+        public GameObject VideoCanvas;
+
         [FormerlySerializedAs("appIdInput")]
         [SerializeField]
         private AppIdInput _appIdInput;
@@ -47,6 +55,11 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         // Use this for initialization
         private void Start()
         {
+
+            button = GetComponent<Button>();
+            buttonText = button.GetComponentInChildren<TMP_Text>(); 
+            button.onClick.AddListener(ExecuteFunction);
+
             LoadAssetData();
             if (CheckAppId())
             {
@@ -61,6 +74,22 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 #endif
             }
         }
+        void ExecuteFunction()
+        {
+            if (buttonText.text == "Share Screen") 
+            {
+                StopShare();
+                VideoCanvas.SetActive(false);
+            }
+            else if (buttonText.text == "Stop Sharing Screen") 
+            {
+               
+                PrepareScreenCapture();
+              
+                VideoCanvas.SetActive(true);
+            }
+        }
+
 
         private bool CheckAppId()
         {
