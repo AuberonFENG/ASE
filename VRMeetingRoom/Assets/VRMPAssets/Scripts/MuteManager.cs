@@ -1,3 +1,4 @@
+using System;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,16 +6,28 @@ using XRMultiplayer;
 
 public class MuteManager : MonoBehaviour
 {
+    public Canvas canvas;
     public Button muteButton;
     public PlayerListUI playerListUI;
-    private void Start()
+    /*
+    public void buttonShow()
     {
-        muteButton.onClick.AddListener(OnMuteAllChanged);
-    }
-    private void OnMuteAllChanged()
-    {
-        playerListUI.MuteAllPlayer();
+        if (NetworkManager.Singleton.IsHost)
+        {
+            canvas.enabled = true;
+            muteButton.onClick.AddListener(OnMuteAllChanged);
+        }
+        else
+        {
+            canvas.enabled = false;
+        }
     }
     
+    private void OnMuteAllChanged()
+    {
+        Debug.Log("111111");
+        playerListUI.MuteAllPlayer();
+    }
+    */
    
 }

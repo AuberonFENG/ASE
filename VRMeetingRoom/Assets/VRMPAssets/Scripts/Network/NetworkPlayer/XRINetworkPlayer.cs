@@ -181,6 +181,8 @@ namespace XRMultiplayer
             m_PlayerName.OnValueChanged -= UpdatePlayerName;
             m_PlayerColor.OnValueChanged -= UpdatePlayerColor;
         }
+        
+        
 
         ///<inheritdoc/>
         protected virtual void Update()
