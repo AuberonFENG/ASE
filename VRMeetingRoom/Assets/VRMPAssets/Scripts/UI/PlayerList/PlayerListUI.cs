@@ -127,5 +127,13 @@ namespace XRMultiplayer
                 Utils.Log($"Player with id {playerId} is null. This is a bug.", 2);
             }
         }
+
+        public void MuteAllPlayer()
+        {
+            foreach (PlayerSlot slot in m_PlayerDictionary.Keys)
+            {
+                slot.Squelch();
+            }
+        }
     }
 }

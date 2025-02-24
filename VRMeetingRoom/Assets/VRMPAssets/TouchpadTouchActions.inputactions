@@ -9,7 +9,7 @@
                     "name": "ThumbTouched",
                     "type": "Button",
                     "id": "de376d65-c48f-4ed9-b5df-5775be0b7786",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -18,7 +18,7 @@
                     "name": "Menu",
                     "type": "Button",
                     "id": "edf5cca6-d7f4-4542-935b-3cfd0356995d",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -73,6 +73,28 @@
                     "name": "",
                     "id": "9275ffb2-1ad7-4652-8dbc-ab0179bb1443",
                     "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88b11da5-b91c-47cb-8e51-eef01ddea00c",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0cc27f04-82dc-400d-babf-608d80305e9b",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
