@@ -15,7 +15,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
     {
         //button text listener
         public Button button;
-        public TMP_Text buttonText; // Ê¹ÓÃ TMP_Text ´úÌæ Text
+        public Button button2;
         public GameObject VideoCanvas;
 
         [FormerlySerializedAs("appIdInput")]
@@ -52,13 +52,11 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         public uint localUid;
         public uint localUidEx = 111;
 
+        private bool isSharing = false;
+
         // Use this for initialization
         private void Start()
         {
-
-            button = GetComponent<Button>();
-            buttonText = button.GetComponentInChildren<TMP_Text>(); 
-            button.onClick.AddListener(ExecuteFunction);
 
             LoadAssetData();
             if (CheckAppId())
@@ -73,20 +71,24 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
 #endif
             }
+            button.onClick.AddListener(ExecuteFunction);
+            button2.onClick.AddListener(ExecuteFunction);
         }
+
         void ExecuteFunction()
         {
-            if (buttonText.text == "Share Screen") 
+            if (isSharing == false)
+            {
+
+                PrepareScreenCapture();
+                VideoCanvas.SetActive(true);
+                isSharing = true;
+            }
+            else if (isSharing == true)
             {
                 StopShare();
                 VideoCanvas.SetActive(false);
-            }
-            else if (buttonText.text == "Stop Sharing Screen") 
-            {
-               
-                PrepareScreenCapture();
-              
-                VideoCanvas.SetActive(true);
+                isSharing = false;
             }
         }
 
@@ -156,6 +158,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public void LeaveChannel()
         {
+            //TODO change to leavechannelex
             RtcEngine.LeaveChannel();
         }
 
@@ -460,39 +463,43 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public override void OnError(int err, string msg)
         {
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnError err: {0}, msg: {1}", err, msg));
+            Debug.Log(string.Format("OnError err: {0}, msg: {1}", err, msg));
         }
 
         public override void OnJoinChannelSuccess(RtcConnection connection, int elapsed)
         {
             int build = 0;
-            _desktopScreenShare.Log.UpdateLog(string.Format("sdk version: ${0}",
+
+            Debug.Log(string.Format("sdk version: ${0}",
                 _desktopScreenShare.RtcEngine.GetVersion(ref build)));
-            _desktopScreenShare.Log.UpdateLog(
-                string.Format("OnJoinChannelSuccess channelName: {0}, uid: {1}, elapsed: {2}",
+            Debug.Log(string.Format("OnJoinChannelSuccess channelName: {0}, uid: {1}, elapsed: {2}",
                                 connection.channelId, connection.localUid, elapsed));
+
         }
 
         public override void OnRejoinChannelSuccess(RtcConnection connection, int elapsed)
         {
-            _desktopScreenShare.Log.UpdateLog("OnRejoinChannelSuccess");
+            Debug.Log("OnRejoinChannelSuccess");
         }
 
         public override void OnLeaveChannel(RtcConnection connection, RtcStats stats)
         {
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnLeaveChannel: {0}", connection.localUid));
             ScreenShareV2.DestroyVideoView(connection.localUid);
+            Debug.Log(string.Format("OnLeaveChannel: {0}", connection.localUid));
+
         }
 
         public override void OnClientRoleChanged(RtcConnection connection, CLIENT_ROLE_TYPE oldRole, CLIENT_ROLE_TYPE newRole, ClientRoleOptions newRoleOptions)
         {
-            _desktopScreenShare.Log.UpdateLog("OnClientRoleChanged");
+            Debug.Log("OnClientRoleChanged");
+
         }
 
         public override void OnUserJoined(RtcConnection connection, uint uid, int elapsed)
         {
 
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserJoined connection_uid: ${0}  uid: ${1} elapsed: ${2}", connection.localUid, uid, elapsed));
+            Debug.Log(string.Format("OnUserJoined connection_uid: ${0}  uid: ${1} elapsed: ${2}", connection.localUid, uid, elapsed));
+
             // check if joined the screen share ex channel
             if (connection.localUid == _desktopScreenShare.localUidEx)
             {
@@ -502,8 +509,10 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
 
         public override void OnUserOffline(RtcConnection connection, uint uid, USER_OFFLINE_REASON_TYPE reason)
         {
-            _desktopScreenShare.Log.UpdateLog(string.Format("OnUserOffLine connection_uid: ${0} uid: ${1}, reason: ${2}", connection.localUid, uid,
+
+            Debug.Log(string.Format("OnUserOffLine connection_uid: ${0} uid: ${1}, reason: ${2}", connection.localUid, uid,
                 (int)reason));
+
             // check if joined the screen share ex channel
             if (connection.localUid == _desktopScreenShare.localUidEx)
             {
