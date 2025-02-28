@@ -1,14 +1,14 @@
-[uDD::Log][2025-01-22 23:24:46] Start
-[uDD::Log][2025-01-22 23:24:46] OS Version    : 10.0
-[uDD::Log][2025-01-22 23:24:46] Build Number  : 18363
-[uDD::Log][2025-01-22 23:24:46] Service Pack  : 
-[uDD::Log][2025-01-22 23:24:46] Graphics Card [0] : NVIDIA GeForce RTX 2060
-[uDD::Log][2025-01-22 23:24:46]   > Monitor[0] : \\.\DISPLAY1
-[uDD::Log][2025-01-22 23:24:46] Graphics Card [1] : Microsoft Basic Render Driver
-[uDD::Log][2025-01-22 23:24:46] Monitor::Initialized() =>
-[uDD::Log][2025-01-22 23:24:46]     ID    : 0
-[uDD::Log][2025-01-22 23:24:46]     Size  : (1920, 1080)
-[uDD::Log][2025-01-22 23:24:46]     DPI   : (141, 141)
-[uDD::Log][2025-01-22 23:24:46]     Rot   : Landscape
-[uDD::Log][2025-01-22 23:24:46] Duplicator::Initialize() => OK.
-[uDD::Log][2025-01-22 23:31:06] Stop
+[uDD::Log][2025-02-27 16:34:29] Start
+[uDD::Log][2025-02-27 16:34:29] OS Version    : 10.0
+[uDD::Log][2025-02-27 16:34:29] Build Number  : 18363
+[uDD::Log][2025-02-27 16:34:29] Service Pack  : 
+[uDD::Log][2025-02-27 16:34:29] Graphics Card [0] : NVIDIA GeForce RTX 2060
+[uDD::Log][2025-02-27 16:34:29]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2025-02-27 16:34:29] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2025-02-27 16:34:29] Monitor::Initialized() =>
+[uDD::Log][2025-02-27 16:34:29]     ID    : 0
+[uDD::Log][2025-02-27 16:34:29]     Size  : (1920, 1080)
+[uDD::Log][2025-02-27 16:34:29]     DPI   : (141, 141)
+[uDD::Log][2025-02-27 16:34:29]     Rot   : Landscape
+[uDD::Log][2025-02-27 16:34:29] Duplicator::Initialize() => OK.
+[uDD::Log][2025-02-27 16:35:27] Stop
