@@ -135,7 +135,7 @@ namespace XRMultiplayer
         /// <summary>
         /// Reference to the VoiceChatManager.
         /// </summary>
-        protected VoiceChatManager m_VoiceChat;
+        public VoiceChatManager m_VoiceChat;
 
         /// <summary>
         /// Reference to the VivoxParticipant.
@@ -445,6 +445,41 @@ namespace XRMultiplayer
                     m_VivoxParticipant.MutePlayerLocally();
                 else
                     m_VivoxParticipant.UnmutePlayerLocally();
+            }
+        }
+        
+        [ServerRpc(RequireOwnership = false)]
+        public void RequestMuteChangeServerRpc(bool mute, ServerRpcParams rpcParams = default)
+        {
+            // 让每个玩家自己修改 `selfMuted`
+            if (IsOwner) 
+            {
+                SetSelfMute(mute);
+            }
+            else
+            {
+                RequestMuteChangeClientRpc(mute);
+            }
+        }
+
+        [ClientRpc]
+        private void RequestMuteChangeClientRpc(bool mute)
+        {
+            if (IsOwner) // 只有 `Owner` 可以改
+            {
+                SetSelfMute(mute);
+            }
+        }
+
+        private void SetSelfMute(bool mute)
+        {
+            selfMuted.Value = mute; // 只有 `Owner` 调用此方法
+            if (VivoxService.Instance.IsLoggedIn)
+            {
+                if (mute)
+                    VivoxService.Instance.MuteInputDevice();
+                else
+                    VivoxService.Instance.UnmuteInputDevice();
             }
         }
     }

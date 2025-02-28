@@ -9,13 +9,18 @@ public class MuteManager : MonoBehaviour
     public Canvas canvas;
     public Button muteButton;
     public PlayerListUI playerListUI;
-    /*
-    public void buttonShow()
+    private bool muted = false;
+
+    private void Start()
+    {
+        muteButton.onClick.AddListener(OnMuteAllChanged);
+    }
+
+    private void Update()
     {
         if (NetworkManager.Singleton.IsHost)
         {
             canvas.enabled = true;
-            muteButton.onClick.AddListener(OnMuteAllChanged);
         }
         else
         {
@@ -25,9 +30,15 @@ public class MuteManager : MonoBehaviour
     
     private void OnMuteAllChanged()
     {
-        Debug.Log("111111");
-        playerListUI.MuteAllPlayer();
+        foreach (var player in FindObjectsOfType<XRINetworkPlayer>())
+        {
+            player.RequestMuteChangeServerRpc(!muted); // 让 `ServerRpc` 触发
+        }
+
+        // 本地 UI 也更新
+        playerListUI.MuteAllPlayer(!muted);
+        muted = !muted;
     }
-    */
-   
+
+    
 }

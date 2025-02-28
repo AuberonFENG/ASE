@@ -127,12 +127,13 @@ namespace XRMultiplayer
                 Utils.Log($"Player with id {playerId} is null. This is a bug.", 2);
             }
         }
-
-        public void MuteAllPlayer()
+        
+        public void MuteAllPlayer(bool muted)
         {
             foreach (PlayerSlot slot in m_PlayerDictionary.Keys)
             {
-                slot.Squelch();
+                slot.m_Player.m_VoiceChat.ToggleSelfMute(true, muted);
+                slot.callSquelch(muted);
             }
         }
     }
