@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using WebSocketSharp;
+using Unity.Netcode;
 
 namespace XRMultiplayer
 {
@@ -10,6 +11,7 @@ namespace XRMultiplayer
         public TMP_Text playerSlotName;
         public TMP_Text playerInitial;
         public Image playerIconImage;
+        public bool isHost;
 
         [Header("Mic Button")]
         public Image voiceChatFillImage;
@@ -17,7 +19,7 @@ namespace XRMultiplayer
         [SerializeField] Image m_PlayerVoiceIcon;
         [SerializeField] Image m_SquelchedIcon;
         [SerializeField] Sprite[] micIcons;
-        XRINetworkPlayer m_Player;
+        public XRINetworkPlayer m_Player;
         internal ulong playerID = 0;
 
         public void Setup(XRINetworkPlayer player)
@@ -29,6 +31,16 @@ namespace XRMultiplayer
             m_MicButton.onClick.AddListener(Squelch);
             m_Player.squelched.Subscribe(UpdateSquelchedState);
             m_SquelchedIcon.enabled = false;
+
+            if (NetworkManager.Singleton.IsHost)
+            {
+                isHost = true;
+            }
+            else
+            {
+                isHost = false;
+            }
+            
             if (m_Player.IsLocalPlayer)
             {
                 m_MicButton.interactable = false;
@@ -72,8 +84,21 @@ namespace XRMultiplayer
             }
         }
 
+        public void callSquelch(bool muted)
+        {
+            if (!muted)
+            {
+                m_PlayerVoiceIcon.sprite = micIcons[0];
+            }
+            else
+            {
+                m_PlayerVoiceIcon.sprite = micIcons[1];
+            }
+            Squelch();
+        }
+
         #region Muting
-        public void Squelch()
+        void Squelch()
         {
             m_Player.ToggleSquelch();
         }

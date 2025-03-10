@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [uDD::Log][2025-01-22 23:24:46] Start
 [uDD::Log][2025-01-22 23:24:46] OS Version    : 10.0
 [uDD::Log][2025-01-22 23:24:46] Build Number  : 18363
@@ -12,3 +13,19 @@
 [uDD::Log][2025-01-22 23:24:46]     Rot   : Landscape
 [uDD::Log][2025-01-22 23:24:46] Duplicator::Initialize() => OK.
 [uDD::Log][2025-01-22 23:31:06] Stop
+=======
+[uDD::Log][2025-02-28 12:20:38] Start
+[uDD::Log][2025-02-28 12:20:38] OS Version    : 10.0
+[uDD::Log][2025-02-28 12:20:38] Build Number  : 26100
+[uDD::Log][2025-02-28 12:20:38] Service Pack  : 
+[uDD::Log][2025-02-28 12:20:38] Graphics Card [0] : NVIDIA GeForce RTX 4070
+[uDD::Log][2025-02-28 12:20:38]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2025-02-28 12:20:38] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2025-02-28 12:20:38] Monitor::Initialized() =>
+[uDD::Log][2025-02-28 12:20:38]     ID    : 0
+[uDD::Log][2025-02-28 12:20:38]     Size  : (1920, 1080)
+[uDD::Log][2025-02-28 12:20:38]     DPI   : (81, 81)
+[uDD::Log][2025-02-28 12:20:38]     Rot   : Landscape
+[uDD::Log][2025-02-28 12:20:38] Duplicator::Initialize() => OK.
+[uDD::Log][2025-02-28 12:21:10] Stop
+>>>>>>> Mute
