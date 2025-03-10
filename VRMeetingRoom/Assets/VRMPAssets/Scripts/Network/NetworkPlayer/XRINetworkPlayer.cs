@@ -482,5 +482,16 @@ namespace XRMultiplayer
                     VivoxService.Instance.UnmuteInputDevice();
             }
         }
+        
+        [ClientRpc]
+        public void UpdateMuteStatusClientRpc(bool muted)
+        {
+            PlayerOptions playerOptions = FindObjectOfType<PlayerOptions>();
+            if (playerOptions != null)
+            {
+                playerOptions.UpdateMuteStatusForAll(muted);
+            }
+        }
+
     }
 }

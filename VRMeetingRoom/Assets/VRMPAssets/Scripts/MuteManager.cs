@@ -3,6 +3,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 using XRMultiplayer;
+using System.Linq;
 
 public class MuteManager : MonoBehaviour
 {
@@ -35,10 +36,19 @@ public class MuteManager : MonoBehaviour
             player.RequestMuteChangeServerRpc(!muted); // 让 `ServerRpc` 触发
         }
 
+        // 让 Host 发送 ClientRpc 给所有客户端，更新 UI
+        XRINetworkPlayer hostPlayer = FindObjectsOfType<XRINetworkPlayer>().FirstOrDefault(p => p.IsHost);
+        if (hostPlayer != null)
+        {
+            Debug.Log("1111111111");
+            hostPlayer.UpdateMuteStatusClientRpc(!muted);
+        }
+
         // 本地 UI 也更新
         playerListUI.MuteAllPlayer(!muted);
         muted = !muted;
     }
+
 
     
 }

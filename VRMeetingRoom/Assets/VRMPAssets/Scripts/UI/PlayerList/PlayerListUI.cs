@@ -133,7 +133,7 @@ namespace XRMultiplayer
             foreach (PlayerSlot slot in m_PlayerDictionary.Keys)
             {
                 slot.m_Player.m_VoiceChat.ToggleSelfMute(true, muted);
-                slot.callSquelch(muted);
+                //slot.callSquelch(muted);
             }
         }
     }

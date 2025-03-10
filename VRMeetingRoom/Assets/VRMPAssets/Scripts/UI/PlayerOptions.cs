@@ -300,5 +300,12 @@ namespace XRMultiplayer
             m_MoveProvider.useGravity = !toggle;
             m_MoveProvider.enableFly = toggle;
         }
+        
+        public void UpdateMuteStatusForAll(bool muted)
+        {
+            m_MutedIcon.enabled = muted;
+            m_MicOnIcon.enabled = !muted;
+        }
+
     }
 }
