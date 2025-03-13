@@ -5,15 +5,24 @@ using UnityEngine.InputSystem; // 需要新输入系统
 
 public class RemoveAllMark : MonoBehaviour
 {
-    public Material originalMaterial;  // 由外部传入的初始材质
+    public RenderTexture originalTexture;  // 存储初始纹理
     private Renderer objectRenderer;
 
     [SerializeField] private InputActionReference m_ToggleMenuAction; // 监听 ToggleMenuAction
 
-
     void Awake()
     {
         objectRenderer = GetComponent<Renderer>();
+        Debug.Log("Test Type: " + objectRenderer.material.HasProperty("_CamTexture"));
+        // 存储初始纹理（确保对象有材质）
+        if (objectRenderer != null && objectRenderer.material != null)
+        {
+            originalTexture = (RenderTexture)objectRenderer.material.mainTexture;
+        }
+        else
+        {
+            Debug.LogWarning("No valid material or texture found on this object!");
+        }
 
         // 监听 ToggleMenu 事件
         if (m_ToggleMenuAction != null)
@@ -28,25 +37,21 @@ public class RemoveAllMark : MonoBehaviour
 
     private void OnToggleMenu(InputAction.CallbackContext context)
     {
-        Debug.Log("ToggleMenu action triggered! Resetting material...");
-        ResetMaterial();
+        Debug.Log("ToggleMenu action triggered! Resetting texture...");
+        ResetTexture();
     }
 
-    void ResetMaterial()
+    void ResetTexture()
     {
-        if (objectRenderer != null && originalMaterial != null)
+        if (objectRenderer != null && originalTexture != null)
         {
-            
-            /* here is wronggggggggggggggggggggg!*/
-            // renderer defination?? 
-            objectRenderer.material = originalMaterial;
-            Debug.Log("Original Material Type: " + originalMaterial.GetType().Name);
-
-            Debug.Log("Material has been reset.");
+            Debug.Log("Test Type: " + objectRenderer.material.mainTexture.GetType().Name);
+            objectRenderer.material.mainTexture = originalTexture;
+            Debug.Log("Texture has been reset.");
         }
         else
         {
-            Debug.LogWarning("Original material is not set! Please call Initialize(Material material) before using this component.");
+            Debug.LogWarning("Original texture is not set! Please assign a texture before using this component.");
         }
     }
 
