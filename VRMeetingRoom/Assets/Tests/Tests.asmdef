@@ -6,7 +6,9 @@
         "UnityEditor.TestRunner",
         "Unity.TextMeshPro",
         "Change_Text",
-        "Unity.TextMeshPro.Tests"
+        "Unity.TextMeshPro.Tests",
+        "RemoveAllMark",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
