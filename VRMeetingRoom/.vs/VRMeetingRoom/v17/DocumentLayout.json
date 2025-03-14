@@ -1,34 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\",
+  "WorkspaceRootPath": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\lookattarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\lookattarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|c:\\users\\26330\\documents\\ase\\vrmeetingroom\\assets\\vrmpassets\\scripts\\player\\offlineplayeravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\player\\offlineplayeravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\vrmpassets\\scripts\\ui\\offlinemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\ui\\offlinemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\vrmpassets\\scripts\\ui\\playerlist\\playerslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\ui\\playerlist\\playerslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\vrmpassets\\scripts\\network\\networkplayer\\xrinetworkplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\network\\networkplayer\\xrinetworkplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:Assets\\NetworkedMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:Assets\\NetworkMaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,28 +58,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JoinChannelVideo.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "OfflinePlayerAvatar.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
+              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
+              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:20:39.414Z",
+              "WhenOpened": "2025-03-14T15:58:59.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "OfflineMenu.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
+              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T15:47:32.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerSlot.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
+              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAUwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T15:23:08.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "XRINetworkPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
+              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T15:21:11.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LookAtTarget.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\LookAtTarget.cs",
+              "RelativeDocumentMoniker": "Assets\\LookAtTarget.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\LookAtTarget.cs",
+              "RelativeToolTip": "Assets\\LookAtTarget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:25:38.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JoinChannelVideo.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:20:39.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "NetworkedMaterial.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkedMaterial.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
               "RelativeToolTip": "Assets\\NetworkedMaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,11 +148,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "NetworkMaterial.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkMaterial.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
               "RelativeToolTip": "Assets\\NetworkMaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -79,11 +160,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ClientNetworkTransform.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -91,11 +172,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "NetworkedSlider.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAFIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -103,11 +184,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "NetworkedDropdown.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,11 +196,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "AuthenticationManager.cs",
-              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
-              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAawD0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
