@@ -5,24 +5,14 @@ using UnityEngine.InputSystem; // 需要新输入系统
 
 public class RemoveAllMark : MonoBehaviour
 {
-    public RenderTexture originalTexture;  // 存储初始纹理
     private Renderer objectRenderer;
+    public RenderTexture targetRenderTexture; // 要清除的 RenderTexture
 
     [SerializeField] private InputActionReference m_ToggleMenuAction; // 监听 ToggleMenuAction
 
     void Awake()
     {
         objectRenderer = GetComponent<Renderer>();
-        Debug.Log("Test Type: " + objectRenderer.material.HasProperty("_CamTexture"));
-        // 存储初始纹理（确保对象有材质）
-        if (objectRenderer != null && objectRenderer.material != null)
-        {
-            originalTexture = (RenderTexture)objectRenderer.material.mainTexture;
-        }
-        else
-        {
-            Debug.LogWarning("No valid material or texture found on this object!");
-        }
 
         // 监听 ToggleMenu 事件
         if (m_ToggleMenuAction != null)
@@ -38,21 +28,8 @@ public class RemoveAllMark : MonoBehaviour
     private void OnToggleMenu(InputAction.CallbackContext context)
     {
         Debug.Log("ToggleMenu action triggered! Resetting texture...");
-        ResetTexture();
-    }
-
-    void ResetTexture()
-    {
-        if (objectRenderer != null && originalTexture != null)
-        {
-            Debug.Log("Test Type: " + objectRenderer.material.mainTexture.GetType().Name);
-            objectRenderer.material.mainTexture = originalTexture;
-            Debug.Log("Texture has been reset.");
-        }
-        else
-        {
-            Debug.LogWarning("Original texture is not set! Please assign a texture before using this component.");
-        }
+        targetRenderTexture.Release();  // 释放 RenderTexture
+        Debug.Log("finish reset");
     }
 
     void OnDestroy()
