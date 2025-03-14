@@ -31,7 +31,7 @@ public class PCLook : MonoBehaviour
             // Rotate vertically (limit up/down rotation)
             rotationX -= mouseY;
             rotationX = Mathf.Clamp(rotationX, -80f, 80f);
+            cameraTransform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
         }
-        cameraTransform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
     }
 }
