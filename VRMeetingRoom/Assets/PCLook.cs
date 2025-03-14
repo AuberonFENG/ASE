@@ -17,17 +17,21 @@ public class PCLook : MonoBehaviour
 
     void Update()
     {
-        Vector2 lookDelta = lookAction.action.ReadValue<Vector2>();
+        // Only rotate when the right mouse button is held down
+        if (Mouse.current.rightButton.isPressed)
+        {
+            Vector2 lookDelta = lookAction.action.ReadValue<Vector2>();
 
-        float mouseX = lookDelta.x * sensitivity;
-        float mouseY = lookDelta.y * sensitivity;
+            float mouseX = lookDelta.x * sensitivity;
+            float mouseY = lookDelta.y * sensitivity;
 
-        // Rotate horizontally
-        transform.Rotate(Vector3.up * mouseX);
+            // Rotate horizontally
+            transform.Rotate(Vector3.up * mouseX);
 
-        // Rotate vertically (limit up/down rotation)
-        rotationX -= mouseY;
-        rotationX = Mathf.Clamp(rotationX, -80f, 80f);
+            // Rotate vertically (limit up/down rotation)
+            rotationX -= mouseY;
+            rotationX = Mathf.Clamp(rotationX, -80f, 80f);
+        }
         cameraTransform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
     }
 }
