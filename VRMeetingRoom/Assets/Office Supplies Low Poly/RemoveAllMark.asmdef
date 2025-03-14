@@ -1,0 +1,16 @@
+{
+	"name": "RemoveAllMark",
+	"references": [
+        "UnityEngine.TestRunner",
+        "Unity.InputSystem",
+        "UnityEngine.CoreModule",
+        "UnityEditor.TestRunner"
+	],
+	"includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
