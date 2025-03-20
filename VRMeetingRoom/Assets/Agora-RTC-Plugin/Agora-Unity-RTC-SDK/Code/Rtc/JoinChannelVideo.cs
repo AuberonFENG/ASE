@@ -12,16 +12,17 @@ using System;
 
 public class JoinChannelVideo : MonoBehaviour
 {
-    [SerializeField] GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
+    // [SerializeField] GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
+    public GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
     // public TMP_Text CameraButtonText; // 相机按钮上的文本（TextMeshPro）
     private bool isActive = false; // 初始状态
 
     // 填入你的 app ID
     private string _appID = "5dbad5013ad24129a070b83a994f98f6";
     // 填入你的频道名
-    private string _channelName = "test0224";
+    private string _channelName = "test0320";
     // 填入 Token
-    private string _token = "007eJxTYKiJn5D+57SArEefz4o6lc+Hvh38Fq3hl7Dsi+EV3qDl044qMJimJCWmmBoYGiemGJkYGlkmGpgbJFkYJ1pamqRZWqSZXUvck94QyMgwh6+HgREKQXwOhpLU4hIDIyMTBgYAK10hXQ==";
+    private string _token = "007eJxTYPjjV7dYZxXHd8P/VnZKCx09/q7d8aZ2+XUe/jhW3bYHXfsUGExTkhJTTA0MjRNTjEwMjSwTDcwNkiyMEy0tTdIsLdLMHpjeSW8IZGRg7NvBAiTBEMTnYChJLS4xMDYyYGAAAOSQIH4=";
     internal VideoSurface LocalView;
 
     //internal VideoSurface RemoteView;
@@ -34,31 +35,33 @@ public class JoinChannelVideo : MonoBehaviour
     private ArrayList permissionList = new ArrayList() { Permission.Camera, Permission.Microphone };
 #endif
 
-    void Start()
-    {
-        SetupVideoSDKEngine(); // 初始化 IRtcEngine
-        InitEventHandler(); // 用户回调类实例，并设置回调
-        SetupUI(); // 设置UI点击的函数
-        // PreviewSelf(); // 启用视频模块 开启本地视频预览 渲染视频
-    }
+    //void Start()
+    //{
+    //    //SetupVideoSDKEngine(); // 初始化 IRtcEngine
+    //    //InitEventHandler(); // 用户回调类实例，并设置回调
+    //    //SetupUI(); // 设置UI点击的函数
+    //    //// PreviewSelf(); // 启用视频模块 开启本地视频预览 渲染视频
+    //    Setup();
+    //}
 
-    void Update()
-    {
-        CheckPermissions();
-    }
+    //void Update()
+    //{
+    //    CheckPermissions();
+    //}
 
-    void OnApplicationQuit()
-    {
-        if (RtcEngine != null)
-        {
-            LeaveChannel();
-            // 销毁 IRtcEngine
-            RtcEngine.Dispose();
-            RtcEngine = null;
-        }
-    }
+    //void OnApplicationQuit()
+    //{
+    //    //if (RtcEngine != null)
+    //    //{
+    //    //    LeaveChannel();
+    //    //    // 销毁 IRtcEngine
+    //    //    RtcEngine.Dispose();
+    //    //    RtcEngine = null;
+    //    //}
+    //    Quit();
+    //}
 
-    private void CheckPermissions()
+    public void CheckPermissions()
     {
 #if (UNITY_2018_3_OR_NEWER && UNITY_ANDROID)
             foreach (string permission in permissionList)
@@ -71,17 +74,24 @@ public class JoinChannelVideo : MonoBehaviour
 #endif
     }
 
-    //private void PreviewSelf()
-    //{
-    //    // 启用视频模块
-    //    RtcEngine.EnableVideo();
-    //    // 开启本地视频预览
-    //    RtcEngine.StartPreview();
-    //    // 设置本地视频显示
-    //    LocalView.SetForUser(0, "");
-    //    // 渲染视频
-    //    LocalView.SetEnable(true);
-    //}
+    public void Setup()
+    {
+        SetupVideoSDKEngine(); // 初始化 IRtcEngine
+        InitEventHandler(); // 用户回调类实例，并设置回调
+        SetupUI(); // 设置UI点击的函数
+        // PreviewSelf(); // 启用视频模块 开启本地视频预览 渲染视频
+    }
+
+    public void Quit()
+    {
+        if (RtcEngine != null)
+        {
+            LeaveChannel();
+            // 销毁 IRtcEngine
+            RtcEngine.Dispose();
+            RtcEngine = null;
+        }
+    }
 
     private void SetupUI()
     {
@@ -271,6 +281,7 @@ public class JoinChannelVideo : MonoBehaviour
             UnpublishVideo();
         }
     }
+
     // 离开频道
     public void LeaveChannel()
     {
@@ -392,4 +403,17 @@ public class JoinChannelVideo : MonoBehaviour
             }
         }
     }
+
+
+    //private void PreviewSelf()
+    //{
+    //    // 启用视频模块
+    //    RtcEngine.EnableVideo();
+    //    // 开启本地视频预览
+    //    RtcEngine.StartPreview();
+    //    // 设置本地视频显示
+    //    LocalView.SetForUser(0, "");
+    //    // 渲染视频
+    //    LocalView.SetEnable(true);
+    //}
 }
