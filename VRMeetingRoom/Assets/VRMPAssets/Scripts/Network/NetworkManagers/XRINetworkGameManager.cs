@@ -10,6 +10,7 @@ using UnityEditor;
 
 namespace XRMultiplayer
 {
+    
 #if USE_FORCED_BYTE_SERIALIZATION
     /// <summary>
     /// Workaround for a bug introduced in NGO 1.9.1.
@@ -27,6 +28,8 @@ namespace XRMultiplayer
     [RequireComponent(typeof(LobbyManager)), RequireComponent(typeof(AuthenticationManager))]
     public class XRINetworkGameManager : NetworkBehaviour
     {
+
+        public MuteManager muteManager;
         /// <summary>
         /// Determines the current state of the networked game connection.
         /// </summary>
@@ -45,7 +48,7 @@ namespace XRMultiplayer
             Connecting,
             Connected
         }
-
+        
         /// <summary>
         /// Max amount of players allowed when creating a new room.
         /// </summary>
@@ -540,7 +543,7 @@ namespace XRMultiplayer
                 Utils.Log($"{k_DebugPrepend}Failed to connect to lobby {m_LobbyManager.connectedLobby.Name}.");
                 m_LobbyManager.OnLobbyFailed?.Invoke($"Failed to connect to lobby {m_LobbyManager.connectedLobby.Name}.");
             }
-
+           // muteManager.buttonShow();
             return connected;
 
         }

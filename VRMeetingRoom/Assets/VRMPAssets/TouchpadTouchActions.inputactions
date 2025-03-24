@@ -102,7 +102,11 @@
                 },
                 {
                     "name": "",
+<<<<<<< HEAD
                     "id": "53784b91-1adb-4310-80db-141825fac347",
+=======
+                    "id": "88b11da5-b91c-47cb-8e51-eef01ddea00c",
+>>>>>>> Mute
                     "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
@@ -113,7 +117,11 @@
                 },
                 {
                     "name": "",
+<<<<<<< HEAD
                     "id": "deed7e20-6bec-4433-a5a7-adac221662e3",
+=======
+                    "id": "0cc27f04-82dc-400d-babf-608d80305e9b",
+>>>>>>> Mute
                     "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
