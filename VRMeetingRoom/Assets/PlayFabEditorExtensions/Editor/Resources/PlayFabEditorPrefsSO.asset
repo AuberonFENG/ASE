@@ -15,10 +15,10 @@ MonoBehaviour:
   DevAccountEmail: zhangr8@tcd.ie
   DevAccountToken: fcihu6eywefc94kjko7zuk7fip4tijohp71xwkth7td6tb8nut6qcrmq7ipcundr61wkrq9bdwjwp81bh4ob1efg1a3sya4y4s5nr641gkuktch9p1kdfezumxmkdnj9cgmtazimskbtpq451o7mggsr9wwzrot74zet69kjxuckir33n1eadiofpfp7xks5wstjawio
   AadAuthorization: 
-  SelectedStudio: 
+  SelectedStudio: GAME STUDIO
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 0
+  curMainMenuIdx: 1
   curSubMenuIdx: 0

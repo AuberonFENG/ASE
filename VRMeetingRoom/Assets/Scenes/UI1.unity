@@ -2698,7 +2698,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerFabManager: {fileID: 2018228514}
-  MeetingChoice: {fileID: 0}
 --- !u!114 &883451015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6585,6 +6584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39774661a7cc8486b9e4d804b24d53a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginPanel: {fileID: 883451009}
 --- !u!4 &2018228515
 Transform:
   m_ObjectHideFlags: 0

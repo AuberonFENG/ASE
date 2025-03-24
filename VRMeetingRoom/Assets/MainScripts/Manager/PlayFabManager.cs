@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
+using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
     private string username;
+    public GameObject LoginPanel;
     public void RegisterPlayer(string username, string password)
     {
         var RegisterRequest = new RegisterPlayFabUserRequest
@@ -69,7 +71,10 @@ public class PlayFabManager : MonoBehaviour
     {
         Debug.Log("LoginSuccess");
         
-        GetUsername(result.PlayFabId);
+        LoginPanel.SetActive(false);
+        
+        SceneManager.LoadScene("Main"); 
+        SceneManager.UnloadSceneAsync("UI1");
         
         // next step function
     }
