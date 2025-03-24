@@ -22,15 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Whiteboard_Clear",
-                    "type": "Button",
-                    "id": "171590dd-6929-4384-b6fe-4f6a9c515a0a",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -80,17 +71,6 @@
                 },
                 {
                     "name": "",
-                    "id": "a6dd01e0-9ec1-4ff1-934f-f3ab59aee23e",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ThumbTouched",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9275ffb2-1ad7-4652-8dbc-ab0179bb1443",
                     "path": "<XRController>{LeftHand}/menu",
                     "interactions": "",
@@ -102,11 +82,7 @@
                 },
                 {
                     "name": "",
-<<<<<<< HEAD
-                    "id": "53784b91-1adb-4310-80db-141825fac347",
-=======
                     "id": "88b11da5-b91c-47cb-8e51-eef01ddea00c",
->>>>>>> Mute
                     "path": "<Keyboard>/m",
                     "interactions": "",
                     "processors": "",
@@ -117,38 +93,12 @@
                 },
                 {
                     "name": "",
-<<<<<<< HEAD
-                    "id": "deed7e20-6bec-4433-a5a7-adac221662e3",
-=======
                     "id": "0cc27f04-82dc-400d-babf-608d80305e9b",
->>>>>>> Mute
                     "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "89dd2f5e-8493-4a51-9380-714436030263",
-                    "path": "<XRController>{LeftHand}/secondaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Whiteboard_Clear",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1c1a981d-d9d7-4513-a111-aad055010e1c",
-                    "path": "<Keyboard>/c",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Whiteboard_Clear",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
