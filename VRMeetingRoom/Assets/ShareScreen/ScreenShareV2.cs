@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using Agora.Rtc;
 using UnityEngine.Serialization;
 using io.agora.rtc.demo;
-using TMPro; 
+using TMPro;
 
-namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
+namespace Agora_RTC_Plugin.ScreenShareV2
 {
 
 
@@ -38,7 +38,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         private string _channelNameScreen = "";
 
         public Text LogText;
-        internal Logger Log;
+        public Logger Log;
         internal IRtcEngineEx RtcEngine = null;
         private ScreenCaptureSourceInfo[] _screenCaptureSourceInfos;
 
@@ -59,7 +59,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
         {
 
             LoadAssetData();
-            if (CheckAppId())
+            if (true)
             {
                 InitEngine();
                 SetBasicConfiguration();
@@ -92,13 +92,6 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             }
         }
 
-
-        private bool CheckAppId()
-        {
-            Log = new Logger(LogText);
-            return Log.DebugAssert(_appID.Length > 10, "Please fill in your appId in API-Example/profile/appIdInput.asset");
-        }
-
         //Show data in AgoraBasicProfile
         [ContextMenu("ShowAgoraBasicProfileData")]
         private void LoadAssetData()
@@ -124,7 +117,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             context.audioScenario = AUDIO_SCENARIO_TYPE.AUDIO_SCENARIO_DEFAULT;
             context.areaCode = AREA_CODE.AREA_CODE_GLOB;
             RtcEngine.Initialize(context);
-            RtcEngine.InitEventHandler(handler);
+            //RtcEngine.InitEventHandler(handler);
         }
 
         private void SetBasicConfiguration()
@@ -287,18 +280,18 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             if (option.Contains("ScreenCaptureSourceType_Window"))
             {
                 var windowId = option.Split("|".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)[1];
-                Log.UpdateLog(string.Format(">>>>> Start sharing {0}", windowId));
+                //Log.UpdateLog(string.Format(">>>>> Start sharing {0}", windowId));
                 var nRet = RtcEngine.StartScreenCaptureByWindowId(ulong.Parse(windowId), default(Rectangle),
                         default(ScreenCaptureParameters));
-                this.Log.UpdateLog("StartScreenCaptureByWindowId:" + nRet);
+                //this.Log.UpdateLog("StartScreenCaptureByWindowId:" + nRet);
             }
             else
             {
                 var dispId = uint.Parse(option.Split("|".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)[1]);
-                Log.UpdateLog(string.Format(">>>>> Start sharing display {0}", dispId));
+                //Log.UpdateLog(string.Format(">>>>> Start sharing display {0}", dispId));
                 var nRet = RtcEngine.StartScreenCaptureByDisplayId(dispId, default(Rectangle),
                     new ScreenCaptureParameters { captureMouseCursor = true, frameRate = 30 });
-                this.Log.UpdateLog("StartScreenCaptureByDisplayId:" + nRet);
+                //this.Log.UpdateLog("StartScreenCaptureByDisplayId:" + nRet);
             }
 
 #endif
@@ -416,7 +409,7 @@ namespace Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2
             // to be renderered onto
             go.AddComponent<RawImage>();
             // make the object draggable
-            go.AddComponent<UIElementDrag>();
+            //go.AddComponent<UIElementDrag>();
             var canvas = GameObject.Find("VideoCanvas");
             if (canvas != null)
             {
