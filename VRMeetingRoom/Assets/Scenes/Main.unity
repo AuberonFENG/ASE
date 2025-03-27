@@ -5003,9 +5003,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2.ScreenShareV2,
-          Assembly-CSharp
+      - m_Target: {fileID: 1496269994}
+        m_TargetAssemblyTypeName: Agora_RTC_Plugin.ScreenShareV2.ScreenShareV2, Assembly-CSharp
         m_MethodName: OnConfirmButtonClicked
         m_Mode: 1
         m_Arguments:
