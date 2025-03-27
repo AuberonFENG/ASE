@@ -2246,6 +2246,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1726092108}
     m_Modifications:
+    - target: {fileID: 1271176075925858631, guid: 37cb7ad92dbb8704b81f28a657ee74aa,
+        type: 3}
+      propertyPath: m_ToggleMenuAction
+      value: 
+      objectReference: {fileID: -5322301810246822548, guid: eb52ff888441e4b999418d456069b47e,
+        type: 3}
     - target: {fileID: 4736317881117194465, guid: 37cb7ad92dbb8704b81f28a657ee74aa,
         type: 3}
       propertyPath: m_Name
