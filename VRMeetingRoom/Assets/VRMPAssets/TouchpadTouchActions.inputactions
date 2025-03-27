@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Whiteboard_Clear",
+                    "type": "Button",
+                    "id": "a32e1a71-b12c-4dae-a450-254a62d3fd7e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -101,6 +110,28 @@
                     "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3049aae6-1721-413c-89dc-9622c31802b3",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Whiteboard_Clear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2aede8f6-eeed-4413-82f6-2b0c4d127ced",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Whiteboard_Clear",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -112,7 +143,7 @@
                     "name": "ThumbTouched",
                     "type": "Button",
                     "id": "fa484675-2d36-4a13-8a7a-d9dd699cf223",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
