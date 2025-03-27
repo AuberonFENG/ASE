@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bad1593-aba9-4f9f-8ac5-12ecf6dea779" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/Request/PlayFabLogInRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/Request/PlayFabLogInRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI1.unity" afterDir="false" />
-    </list>
+    <list default="true" id="0bad1593-aba9-4f9f-8ac5-12ecf6dea779" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +132,7 @@
       <workItem from="1740748981923" duration="2807000" />
       <workItem from="1740758018174" duration="255000" />
       <workItem from="1742820545589" duration="522000" />
-      <workItem from="1742823152004" duration="322000" />
+      <workItem from="1742823152004" duration="590000" />
     </task>
     <servers />
   </component>
