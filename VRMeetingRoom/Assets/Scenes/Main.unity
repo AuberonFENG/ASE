@@ -14985,7 +14985,7 @@ PrefabInstance:
     - target: {fileID: 5712270926343432281, guid: 95bd29654e15ad844be6210374a75967,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5712270926343432281, guid: 95bd29654e15ad844be6210374a75967,
         type: 3}
@@ -14996,7 +14996,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1496269994}
     - target: {fileID: 5712270926343432281, guid: 95bd29654e15ad844be6210374a75967,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -15010,8 +15010,7 @@ PrefabInstance:
     - target: {fileID: 5712270926343432281, guid: 95bd29654e15ad844be6210374a75967,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Agora_RTC_Plugin.API_Example.Examples.Advanced.ScreenShareV2.ScreenShareV2,
-        Assembly-CSharp
+      value: Agora_RTC_Plugin.ScreenShareV2.ScreenShareV2, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5712270926343432281, guid: 95bd29654e15ad844be6210374a75967,
         type: 3}

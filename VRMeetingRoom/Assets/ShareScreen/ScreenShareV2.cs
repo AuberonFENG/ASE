@@ -385,9 +385,9 @@ namespace Agora_RTC_Plugin.ScreenShareV2
                 mesh.material = new Material(Shader.Find("Unlit/Texture"));
             }
             // set up transform
-            go.transform.Rotate(-90.0f, 0.0f, 0.0f);
-            go.transform.position = new Vector3(0.0f, 3.241f, -10.0f);
-            go.transform.localScale = new Vector3(0, 0, 0);
+            go.transform.rotation = Quaternion.Euler(270.0f, 90.0f, 0.0f);
+            go.transform.position = new Vector3(7.39f, 3.24f, 0.76f);
+            go.transform.localScale = new Vector3(0.0f, 0.0f, 0.0f);
 
             // configure videoSurface
             var videoSurface = go.AddComponent<VideoSurface>();
