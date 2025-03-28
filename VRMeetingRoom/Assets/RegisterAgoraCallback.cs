@@ -106,7 +106,7 @@ public class RegisterAgoraCallback : MonoBehaviour
                 {
                     GameObject.Destroy(videoSurface.gameObject);
                     _videoSample.remoteViews.Remove(uid);
-                    Debug.Log($"Remote user {uid} turned off their video.");
+                    Debug.Log($"Agora: Remote user {uid} turned off their video.");
                 }
             }
         }
@@ -120,7 +120,7 @@ public class RegisterAgoraCallback : MonoBehaviour
                 {
                     GameObject.Destroy(videoSurface.gameObject);
                     _videoSample.remoteViews.Remove(uid);
-                    Debug.Log($"Remote user {uid} turned off their video.");
+                    Debug.Log($"Agora: Remote user {uid} turned off their video.");
                 }
             }
             else
@@ -148,7 +148,7 @@ public class RegisterAgoraCallback : MonoBehaviour
                     // 将新视图存入字典
                     _videoSample.remoteViews.Add(uid, videoSurface);
 
-                    Debug.Log($"Remote user {uid} turned on their video.");
+                    Debug.Log($"Agora: Remote user {uid} turned on their video.");
                 }
             }
         }

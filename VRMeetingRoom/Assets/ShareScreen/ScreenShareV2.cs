@@ -10,7 +10,6 @@ using TMPro;
 namespace Agora_RTC_Plugin.ScreenShareV2
 {
 
-
     public class ScreenShareV2 : MonoBehaviour
     {
         //button text listener

@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|e:\\study\\cs7cs3 \u2013 advanced software engineering\\vrmeetingroom\\vrmeetingroom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\sharecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\sharecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|e:\\study\\cs7cs3 \u2013 advanced software engineering\\vrmeetingroom\\vrmeetingroom\\assets\\registeragoracallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\assets\\registeragoracallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\registeragoracallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,60 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShareCamera.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:06:24.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JoinChannelVideo.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:27:29.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegisterAgoraCallback.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
-              "RelativeDocumentMoniker": "Assets\\RegisterAgoraCallback.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
-              "RelativeToolTip": "Assets\\RegisterAgoraCallback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:02:07.963Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "JoinChannelVideo.cs",
+              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T13:27:29.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterAgoraCallback.cs",
+              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
+              "RelativeDocumentMoniker": "Assets\\RegisterAgoraCallback.cs",
+              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
+              "RelativeToolTip": "Assets\\RegisterAgoraCallback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:02:07.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ScreenShareV2.cs",
               "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
               "RelativeDocumentMoniker": "Assets\\ShareScreen\\ScreenShareV2.cs",
               "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
               "RelativeToolTip": "Assets\\ShareScreen\\ScreenShareV2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T16:50:32.116Z"
             }

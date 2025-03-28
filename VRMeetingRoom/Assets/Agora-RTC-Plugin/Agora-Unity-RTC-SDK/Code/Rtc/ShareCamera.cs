@@ -1,6 +1,4 @@
-using Agora.Rtc;
 using UnityEngine;
-using UnityEngine.UI;
 using Agora_RTC_Plugin.JoinChannelVideo;
 
 public class ShareCamera : MonoBehaviour

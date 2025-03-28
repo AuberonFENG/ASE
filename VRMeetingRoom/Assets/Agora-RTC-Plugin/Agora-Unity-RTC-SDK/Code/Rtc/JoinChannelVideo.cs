@@ -21,9 +21,9 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
         // 填入你的 app ID
         private string _appID = "5dbad5013ad24129a070b83a994f98f6";
         // 填入你的频道名
-        private string _channelName = "test0327";
+        private string _channelName = "test0328";
         // 填入 Token
-        private string _token = "007eJxTYPB+klr1ylzj+WLfMwzmaostfCxzK/oyVsSLdmVtOSSl8E2BwTQlKTHF1MDQODHFyMTQyDLRwNwgycI40dLSJM3SIs1ss8/T9IZARgZl3w4WRgYIBPE5GEpSi0sMjI3MGRgAVNcemw==";
+        private string _token = "007eJxTYFC7+8Fkz6GMSvZ67r8uiYFixw8mHvwZtPib393sgH2rj8goMJimJCWmmBoYGiemGJkYGlkmGpgbJFkYJ1pamqRZWqSZfVrxLL0hkJFhQ40fCyMDBIL4HAwlqcUlBsZGFgwMAE14Ik8=";
         internal VideoSurface LocalView;
 
         //internal VideoSurface RemoteView;
@@ -36,30 +36,30 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
     private ArrayList permissionList = new ArrayList() { Permission.Camera, Permission.Microphone };
 #endif
 
-        //void Start()
-        //{
-        //    //SetupVideoSDKEngine(); // 初始化 IRtcEngine
-        //    ////InitEventHandler(); // 用户回调类实例，并设置回调
-        //    //SetupUI(); // 设置UI点击的函数
-        //    Setup();
-        //}
+        void Start()
+        {
+            //SetupVideoSDKEngine(); // 初始化 IRtcEngine
+            ////InitEventHandler(); // 用户回调类实例，并设置回调
+            //SetupUI(); // 设置UI点击的函数
+            Setup();
+        }
 
-        //void Update()
-        //{
-        //    CheckPermissions();
-        //}
+        void Update()
+        {
+            CheckPermissions();
+        }
 
-        //void OnApplicationQuit()
-        //{
-        //    //if (RtcEngine != null)
-        //    //{
-        //    //    LeaveChannel();
-        //    //    // 销毁 IRtcEngine
-        //    //    RtcEngine.Dispose();
-        //    //    RtcEngine = null;
-        //    //}
-        //    Quit();
-        //}
+        void OnApplicationQuit()
+        {
+            //if (RtcEngine != null)
+            //{
+            //    LeaveChannel();
+            //    // 销毁 IRtcEngine
+            //    RtcEngine.Dispose();
+            //    RtcEngine = null;
+            //}
+            Quit();
+        }
 
         public void Quit()
         {
