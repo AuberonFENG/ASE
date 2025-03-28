@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|c:\\users\\26330\\documents\\ase\\vrmeetingroom\\assets\\vrmpassets\\scripts\\player\\jointbasedhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\player\\jointbasedhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\lookattarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\lookattarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|c:\\users\\26330\\documents\\ase\\vrmeetingroom\\assets\\vrmpassets\\scripts\\player\\offlineplayeravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\assets\\vrmpassets\\scripts\\player\\offlineplayeravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9351A5-FE01-AB72-831D-30A35C61A9EB}|VRMP.csproj|solutionrelative:assets\\vrmpassets\\scripts\\player\\offlineplayeravatar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -58,11 +66,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JointBasedHand.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Player\\JointBasedHand.cs",
+              "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Player\\JointBasedHand.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Player\\JointBasedHand.cs",
+              "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Player\\JointBasedHand.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T13:56:59.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LocalVrTrackingInput.cs",
+              "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs",
+              "ToolTip": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs",
+              "RelativeToolTip": "Assets\\Plugins\\VRArmIK\\Scripts\\LocalVrTrackingInput.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:28:53.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OfflinePlayerAvatar.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
@@ -70,12 +102,11 @@
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Player\\OfflinePlayerAvatar.cs",
               "ViewState": "AgIAAJ4AAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T15:58:59.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T15:58:59.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OfflineMenu.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\UI\\OfflineMenu.cs",
@@ -87,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PlayerSlot.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\UI\\PlayerList\\PlayerSlot.cs",
@@ -99,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "XRINetworkPlayer.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkPlayer\\XRINetworkPlayer.cs",
@@ -111,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LookAtTarget.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\LookAtTarget.cs",
               "RelativeDocumentMoniker": "Assets\\LookAtTarget.cs",
@@ -119,12 +150,11 @@
               "RelativeToolTip": "Assets\\LookAtTarget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:25:38.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T14:25:38.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "JoinChannelVideo.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
               "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
@@ -136,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "NetworkedMaterial.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkedMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkedMaterial.cs",
@@ -148,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "NetworkMaterial.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\NetworkMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\NetworkMaterial.cs",
@@ -160,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ClientNetworkTransform.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\ClientNetworkTransform.cs",
@@ -172,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "NetworkedSlider.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedSlider.cs",
@@ -184,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "NetworkedDropdown.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkUtilityComponents\\NetworkUI\\NetworkedDropdown.cs",
@@ -196,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AuthenticationManager.cs",
               "DocumentMoniker": "C:\\Users\\26330\\Documents\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\AuthenticationManager.cs",
