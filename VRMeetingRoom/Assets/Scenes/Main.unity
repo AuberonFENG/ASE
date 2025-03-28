@@ -2987,12 +2987,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693160501}
   m_CullTransparentMesh: 1
---- !u!1 &698386163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1414617097962784770, guid: 77ac6b10722bcca4a8baf70e44d89e78,
-    type: 3}
-  m_PrefabInstance: {fileID: 4607428429233221380}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &703629935
 GameObject:
   m_ObjectHideFlags: 0
@@ -5477,7 +5471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showLocalView: {fileID: 1526061022}
-  leaveChannel: {fileID: 698386163}
+  leaveChannel: {fileID: 2125003969}
   joinChannel: {fileID: 1862020429}
   changeCamera: {fileID: 8591930901005709440}
   changeCameraHost: {fileID: 1580929905}
@@ -7989,6 +7983,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890d351bcb11f5245838066b83e72d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2125003969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7371211894834968621, guid: 77ac6b10722bcca4a8baf70e44d89e78,
+    type: 3}
+  m_PrefabInstance: {fileID: 4607428429233221380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2139262939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13662,6 +13662,11 @@ PrefabInstance:
     - target: {fileID: 463831141400273028, guid: 77ac6b10722bcca4a8baf70e44d89e78,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149113664312379306, guid: 77ac6b10722bcca4a8baf70e44d89e78,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1153587615230119192, guid: 77ac6b10722bcca4a8baf70e44d89e78,
