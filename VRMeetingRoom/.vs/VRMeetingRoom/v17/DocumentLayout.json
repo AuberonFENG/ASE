@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ASE\\Projects\\VRMeetingRoom\\",
+  "WorkspaceRootPath": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|D:\\ASE\\Projects\\VRMeetingRoom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ShareScreen\\ScreenShareV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|D:\\ASE\\Projects\\VRMeetingRoom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\agorartcsdk.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\agorartcsdk.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "VoiceChatManager.cs",
-              "DocumentMoniker": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
+              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
               "RelativeDocumentMoniker": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
-              "ToolTip": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
+              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
               "RelativeToolTip": "Assets\\VRMPAssets\\Scripts\\Network\\NetworkManagers\\VoiceChatManager.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAwwJcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -44,10 +44,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "JoinChannelVideo.cs",
-              "DocumentMoniker": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
               "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ToolTip": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs*",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs*",
+              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
+              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T13:27:29.391Z",
@@ -57,26 +57,25 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "AgoraRtcSDK.asmdef",
-              "DocumentMoniker": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
+              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
               "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
-              "ToolTip": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
+              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
               "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\AgoraRtcSDK.asmdef",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-02-20T17:23:03.722Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ScreenShareV2.cs",
-              "DocumentMoniker": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
+              "DocumentMoniker": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
               "RelativeDocumentMoniker": "Assets\\ShareScreen\\ScreenShareV2.cs",
-              "ToolTip": "D:\\ASE\\Projects\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
+              "ToolTip": "F:\\Github\\Sourcetree\\ASE\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
               "RelativeToolTip": "Assets\\ShareScreen\\ScreenShareV2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:50:32.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T16:50:32.116Z"
             }
           ]
         }
