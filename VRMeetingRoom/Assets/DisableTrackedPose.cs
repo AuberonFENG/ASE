@@ -3,18 +3,18 @@ using UnityEngine.InputSystem.XR; // Needed to reference TrackedPoseDriver
 
 public class DisableTrackedPoseDriver : MonoBehaviour
 {
+    [SerializeField] private GameObject leftController;
     void Start()
     {
         // Find the TrackedPoseDriver component on this GameObject
         TrackedPoseDriver trackedPoseDriver = GetComponent<TrackedPoseDriver>();
 
-        // Check if it's running on Windows
-        if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+        // Check
+        if (!leftController.activeInHierarchy)
         {
             if (trackedPoseDriver != null)
             {
-                Debug.Log("Disabling TrackedPoseDriver on Windows");
-                trackedPoseDriver.enabled = false; //Disable it externally!
+                trackedPoseDriver.enabled = false;
             }
         }
     }
