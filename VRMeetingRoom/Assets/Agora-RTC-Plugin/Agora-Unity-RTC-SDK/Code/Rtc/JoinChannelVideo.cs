@@ -13,7 +13,8 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
 {
     public class JoinChannelVideo : MonoBehaviour
     {
-        [SerializeField] GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
+        //[SerializeField] GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
+        public GameObject showLocalView, leaveChannel, joinChannel, changeCamera, changeCameraHost;
         // public TMP_Text CameraButtonText; // 相机按钮上的文本（TextMeshPro）
         private bool isActive = false; // 初始状态
 
@@ -35,20 +36,32 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
     private ArrayList permissionList = new ArrayList() { Permission.Camera, Permission.Microphone };
 #endif
 
-        void Start()
-        {
-            SetupVideoSDKEngine(); // 初始化 IRtcEngine
-            //InitEventHandler(); // 用户回调类实例，并设置回调
-            SetupUI(); // 设置UI点击的函数
-                       // PreviewSelf(); // 启用视频模块 开启本地视频预览 渲染视频
-        }
+        //void Start()
+        //{
+        //    //SetupVideoSDKEngine(); // 初始化 IRtcEngine
+        //    ////InitEventHandler(); // 用户回调类实例，并设置回调
+        //    //SetupUI(); // 设置UI点击的函数
+        //    Setup();
+        //}
 
-        void Update()
-        {
-            CheckPermissions();
-        }
+        //void Update()
+        //{
+        //    CheckPermissions();
+        //}
 
-        void OnApplicationQuit()
+        //void OnApplicationQuit()
+        //{
+        //    //if (RtcEngine != null)
+        //    //{
+        //    //    LeaveChannel();
+        //    //    // 销毁 IRtcEngine
+        //    //    RtcEngine.Dispose();
+        //    //    RtcEngine = null;
+        //    //}
+        //    Quit();
+        //}
+
+        public void Quit()
         {
             if (RtcEngine != null)
             {
@@ -59,7 +72,7 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
             }
         }
 
-        private void CheckPermissions()
+        public void CheckPermissions()
         {
 #if (UNITY_2018_3_OR_NEWER && UNITY_ANDROID)
             foreach (string permission in permissionList)
@@ -71,18 +84,6 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
             }
 #endif
         }
-
-        //private void PreviewSelf()
-        //{
-        //    // 启用视频模块
-        //    RtcEngine.EnableVideo();
-        //    // 开启本地视频预览
-        //    RtcEngine.StartPreview();
-        //    // 设置本地视频显示
-        //    LocalView.SetForUser(0, "");
-        //    // 渲染视频
-        //    LocalView.SetEnable(true);
-        //}
 
         private void SetupUI()
         {
@@ -123,12 +124,20 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
             RtcEngine.Initialize(context);
         }
 
-        // 创建用户回调类实例，并设置回调
-        private void InitEventHandler()
+
+        public void Setup()
         {
-            UserEventHandler handler = new UserEventHandler(this);
-            RtcEngine.InitEventHandler(handler);
+            SetupVideoSDKEngine(); // 初始化 IRtcEngine
+            //InitEventHandler(); // 用户回调类实例，并设置回调
+            SetupUI(); // 设置UI点击的函数
         }
+
+        // 创建用户回调类实例，并设置回调
+        //private void InitEventHandler()
+        //{
+        //    UserEventHandler handler = new UserEventHandler(this);
+        //    RtcEngine.InitEventHandler(handler);
+        //}
 
         public void JoinChannel()
         {
