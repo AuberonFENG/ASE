@@ -1,14 +1,15 @@
-[uDD::Log][2025-02-28 12:20:38] Start
-[uDD::Log][2025-02-28 12:20:38] OS Version    : 10.0
-[uDD::Log][2025-02-28 12:20:38] Build Number  : 26100
-[uDD::Log][2025-02-28 12:20:38] Service Pack  : 
-[uDD::Log][2025-02-28 12:20:38] Graphics Card [0] : NVIDIA GeForce RTX 4070
-[uDD::Log][2025-02-28 12:20:38]   > Monitor[0] : \\.\DISPLAY1
-[uDD::Log][2025-02-28 12:20:38] Graphics Card [1] : Microsoft Basic Render Driver
-[uDD::Log][2025-02-28 12:20:38] Monitor::Initialized() =>
-[uDD::Log][2025-02-28 12:20:38]     ID    : 0
-[uDD::Log][2025-02-28 12:20:38]     Size  : (1920, 1080)
-[uDD::Log][2025-02-28 12:20:38]     DPI   : (81, 81)
-[uDD::Log][2025-02-28 12:20:38]     Rot   : Landscape
-[uDD::Log][2025-02-28 12:20:38] Duplicator::Initialize() => OK.
-[uDD::Log][2025-02-28 12:21:10] Stop
+[uDD::Log][2025-04-07 12:44:14] Start
+[uDD::Log][2025-04-07 12:44:14] OS Version    : 10.0
+[uDD::Log][2025-04-07 12:44:14] Build Number  : 26100
+[uDD::Log][2025-04-07 12:44:14] Service Pack  : 
+[uDD::Log][2025-04-07 12:44:14] Graphics Card [0] : NVIDIA GeForce RTX 4070 Laptop GPU
+[uDD::Log][2025-04-07 12:44:14]   > Monitor[0] : \\.\DISPLAY6
+[uDD::Log][2025-04-07 12:44:14] Graphics Card [1] : AMD Radeon(TM) 610M
+[uDD::Log][2025-04-07 12:44:14] Graphics Card [2] : Microsoft Basic Render Driver
+[uDD::Log][2025-04-07 12:44:14] Monitor::Initialized() =>
+[uDD::Log][2025-04-07 12:44:14]     ID    : 0
+[uDD::Log][2025-04-07 12:44:14]     Size  : (2560, 1600)
+[uDD::Log][2025-04-07 12:44:14]     DPI   : (189, 189)
+[uDD::Log][2025-04-07 12:44:14]     Rot   : Landscape
+[uDD::Log][2025-04-07 12:44:14] Duplicator::Initialize() => OK.
+[uDD::Log][2025-04-07 12:44:42] Stop
