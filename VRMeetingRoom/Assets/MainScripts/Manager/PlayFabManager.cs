@@ -9,6 +9,7 @@ public class PlayFabManager : MonoBehaviour
 {
     private string username;
     public GameObject LoginPanel;
+    private string cachedUsername; // 缓存本次登录用户名
     public void RegisterPlayer(string username, string password)
     {
         var RegisterRequest = new RegisterPlayFabUserRequest
@@ -22,6 +23,7 @@ public class PlayFabManager : MonoBehaviour
 
     public void Login(string username, string password)
     {
+        cachedUsername = username; // 记录当前登录用户名 
         var LoginRequest = new LoginWithPlayFabRequest
         {
             Username = username,
@@ -70,7 +72,10 @@ public class PlayFabManager : MonoBehaviour
     private void OnLoginSuccess(LoginResult result)
     {
         Debug.Log("LoginSuccess");
-        
+
+        //保存 EntityId 到 SessionManager
+        PlayFabSessionManager.Instance.SetLoginResult(result.EntityToken, cachedUsername);
+
         LoginPanel.SetActive(false);
         
         SceneManager.LoadScene("Main"); 

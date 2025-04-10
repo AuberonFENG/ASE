@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0bad1593-aba9-4f9f-8ac5-12ecf6dea779" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/PlayFab_File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/PlayFab_File.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Tests.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/Tests.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VRMPAssets/Tutorial/TutorialMaterials/Video_Material_Unlit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRMPAssets/Tutorial/TutorialMaterials/Video_Material_Unlit.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainScripts/PlayFabSessionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/playerfabtest/Tests/PlayFabManagerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Models/TableOfContentModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.11.0/Runtime/Core/NetworkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -62,7 +64,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1-arm64/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -70,7 +72,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1-arm64/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -140,6 +142,7 @@
       <workItem from="1742820545589" duration="522000" />
       <workItem from="1742823152004" duration="590000" />
       <workItem from="1743769638539" duration="716000" />
+      <workItem from="1744295489643" duration="538000" />
     </task>
     <servers />
   </component>

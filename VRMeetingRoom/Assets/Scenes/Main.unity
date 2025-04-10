@@ -16137,6 +16137,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3469921826530117034, guid: f4a88962e00b8354cb804bba1e0094a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3469921826530117034, guid: f4a88962e00b8354cb804bba1e0094a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8591930901005709445}
+    - target: {fileID: 3469921826530117034, guid: f4a88962e00b8354cb804bba1e0094a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFileButtonClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 3469921826530117034, guid: f4a88962e00b8354cb804bba1e0094a1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayFab_File, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3472654581180628967, guid: f4a88962e00b8354cb804bba1e0094a1,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -16380,6 +16400,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8591930901005709442}
+    - targetCorrespondingSourceObject: {fileID: 332422245475075138, guid: f4a88962e00b8354cb804bba1e0094a1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8591930901005709445}
   m_SourcePrefab: {fileID: 100100000, guid: f4a88962e00b8354cb804bba1e0094a1, type: 3}
 --- !u!1 &8591930901005709440 stripped
 GameObject:
@@ -16422,6 +16446,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &8591930901005709444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 332422245475075138, guid: f4a88962e00b8354cb804bba1e0094a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 8591930901005709439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8591930901005709445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8591930901005709444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a3b159df97a43959732ababbe31fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entityId: 
+  entityType: 
+  ActiveUploadFileName: 
+  NewFileName: 
+  GlobalFileLock: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
