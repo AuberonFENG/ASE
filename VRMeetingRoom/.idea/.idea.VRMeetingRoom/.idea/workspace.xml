@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0bad1593-aba9-4f9f-8ac5-12ecf6dea779" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRMeetingRoom/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainScripts/PlayFab_File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainScripts/PlayFab_File.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRMPAssets/Scripts/Network/NetworkManagers/XRINetworkGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRMPAssets/Scripts/Network/NetworkManagers/XRINetworkGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRMPAssets/Scripts/Network/NetworkPlayer/XRINetworkPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRMPAssets/Scripts/Network/NetworkPlayer/XRINetworkPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRMPAssets/Tutorial/TutorialMaterials/Video_Material_Unlit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRMPAssets/Tutorial/TutorialMaterials/Video_Material_Unlit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +22,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MainScripts/PlayFabSessionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainScripts/Manager/PlayFabSessionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/playerfabtest/Tests/PlayFabManagerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.learn.iet-framework@3.1.3/Editor/Models/TableOfContentModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.11.0/Runtime/Core/NetworkBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.11.0/Runtime/Core/NetworkObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.netcode.gameobjects@1.11.0/Runtime/Logging/NetworkLog.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.core-utils@2.3.0/Runtime/XROrigin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3.0.5/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.openxr@1.13.0/Runtime/OpenXRLoader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -37,20 +41,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "FinalProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
@@ -64,7 +68,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1-arm64/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -72,7 +76,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.52f1-arm64/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -143,6 +147,9 @@
       <workItem from="1742823152004" duration="590000" />
       <workItem from="1743769638539" duration="716000" />
       <workItem from="1744295489643" duration="538000" />
+      <workItem from="1744375560186" duration="253000" />
+      <workItem from="1744375822276" duration="685000" />
+      <workItem from="1744376527143" duration="2325000" />
     </task>
     <servers />
   </component>
@@ -161,5 +168,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

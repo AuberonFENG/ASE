@@ -29,6 +29,7 @@ namespace XRMultiplayer
     public class XRINetworkGameManager : NetworkBehaviour
     {
 
+        public GameObject UI;
         public MuteManager muteManager;
         /// <summary>
         /// Determines the current state of the networked game connection.
@@ -284,6 +285,7 @@ namespace XRMultiplayer
             m_Connected.Value = true;
             LocalId = localPlayerId;
             PlayerHudNotification.Instance.ShowText($"<b>Status:</b> Connected");
+            UI.SetActive(true);
         }
 
         /// <summary>

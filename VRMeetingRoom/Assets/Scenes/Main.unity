@@ -817,6 +817,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1149903581173863409, guid: 0267a1d338db2bf4c9625e450bbaaad0,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 8591930901005709441}
     - target: {fileID: 1582222677943591994, guid: 0267a1d338db2bf4c9625e450bbaaad0,
         type: 3}
       propertyPath: m_CheckForAutoReconnect
@@ -891,6 +896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647664954492677990, guid: 0267a1d338db2bf4c9625e450bbaaad0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16393,7 +16403,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 354988544339343807, guid: f4a88962e00b8354cb804bba1e0094a1, type: 3}
+    - {fileID: 652687261327641970, guid: f4a88962e00b8354cb804bba1e0094a1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 463494338978037474, guid: f4a88962e00b8354cb804bba1e0094a1,

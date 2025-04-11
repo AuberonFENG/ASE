@@ -12,7 +12,8 @@ namespace XRMultiplayer
     /// XRINetworkPlayer class used for simple interactions.
     /// </summary>
     public class XRINetworkPlayer : NetworkBehaviour
-    {
+    { 
+        private GameObject UI;
         /// <summary>
         /// Speed at which voice amplitude changes.
         /// </summary>
