@@ -10,13 +10,13 @@ public class VRChatboxController : MonoBehaviour
     public float distanceFromCamera = 2f; // UI 显示的默认距离
     public Vector3 offset = new Vector3(0, -0.5f, 0); // 偏移量
 
-    void Start()
+    public void Start()
     {
         chatboxUI.SetActive(true); // 确保 UI 始终激活
         toggleButton.onClick.AddListener(MoveChatboxToFront);
     }
 
-    void MoveChatboxToFront()
+    public void MoveChatboxToFront()
     {
         // 计算 UI 在玩家前方的位置
         Vector3 newPosition = playerCamera.position + playerCamera.forward * distanceFromCamera + offset;

@@ -764,7 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 417400231
+  GlobalObjectIdHash: 3915349826
   InScenePlacedSourceGlobalObjectIdHash: 3807345118
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -818,8 +818,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowOverrideOwnership: 0
+  m_InteractionCheckTime: 2
   m_IgnoreSocketSelectedCallback: 1
   m_ResetObjectOnDisconnect: 1
+  m_RelinquishOwnershipAfterTime: 1
+  m_RelinquishOwnershipTime: 5
   m_UseInteractingChangedEvent: 0
   OnInteractingChanged:
     m_PersistentCalls:
@@ -849,6 +852,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FoldoutValues: 010101
+  m_AllowCollisionOwnershipExchange: 1
+  m_MinExchangeVelocityMagitude: 0.025
   spawnLocked: 1
 --- !u!205 &6732101763350872317
 LODGroup:

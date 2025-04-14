@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\",
+  "WorkspaceRootPath": "F:\\unity\\sourcetree\\VRMeetingRoom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\joinchannelvideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09481DC9-ED49-512B-F0E9-B9A2A7C5F40F}|UIFollowCamera.csproj|f:\\unity\\sourcetree\\vrmeetingroom\\assets\\mainscripts\\uifollowcamera\\uifollowcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09481DC9-ED49-512B-F0E9-B9A2A7C5F40F}|UIFollowCamera.csproj|solutionrelative:assets\\mainscripts\\uifollowcamera\\uifollowcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|e:\\study\\cs7cs3 \u2013 advanced software engineering\\vrmeetingroom\\vrmeetingroom\\assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\sharecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DD3C128-88B8-B532-4FD8-FC2EB24707EA}|AgoraRtcSDK.csproj|solutionrelative:assets\\agora-rtc-plugin\\agora-unity-rtc-sdk\\code\\rtc\\sharecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09481DC9-ED49-512B-F0E9-B9A2A7C5F40F}|UIFollowCamera.csproj|F:\\unity\\sourcetree\\VRMeetingRoom\\assets\\mainscripts\\uifollowcamera\\uifollowcamera.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{09481DC9-ED49-512B-F0E9-B9A2A7C5F40F}|UIFollowCamera.csproj|solutionrelative:assets\\mainscripts\\uifollowcamera\\uifollowcamera.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\assets\\registeragoracallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:assets\\registeragoracallback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03C7A9C1-D732-1FE6-B534-2820ECB82B9B}|TestsPlayerFab.csproj|F:\\unity\\sourcetree\\VRMeetingRoom\\assets\\tests\\tests.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{03C7A9C1-D732-1FE6-B534-2820ECB82B9B}|TestsPlayerFab.csproj|solutionrelative:assets\\tests\\tests.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{56A1CEAF-9E3D-EA68-3196-70F77759B5B0}|Assembly-CSharp.csproj|solutionrelative:Assets\\ShareScreen\\ScreenShareV2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A7CFFFB-3D1A-C82C-25A2-CE5DC5948E77}|Change_Text.csproj|F:\\unity\\sourcetree\\VRMeetingRoom\\assets\\scripts\\changetext\\change_text.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{7A7CFFFB-3D1A-C82C-25A2-CE5DC5948E77}|Change_Text.csproj|solutionrelative:assets\\scripts\\changetext\\change_text.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,61 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShareCamera.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\ShareCamera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UIFollowCamera.cs",
+              "DocumentMoniker": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.cs",
+              "ToolTip": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.cs",
+              "RelativeToolTip": "Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:06:24.854Z",
+              "WhenOpened": "2025-04-14T14:27:31.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JoinChannelVideo.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeDocumentMoniker": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "RelativeToolTip": "Assets\\Agora-RTC-Plugin\\Agora-Unity-RTC-SDK\\Code\\Rtc\\JoinChannelVideo.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:27:29.391Z",
+              "DocumentIndex": 1,
+              "Title": "UIFollowCamera.asmdef",
+              "DocumentMoniker": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.asmdef",
+              "RelativeDocumentMoniker": "Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.asmdef",
+              "ToolTip": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.asmdef",
+              "RelativeToolTip": "Assets\\MainScripts\\UIFollowCamera\\UIFollowCamera.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2025-04-14T14:27:20.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterAgoraCallback.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
-              "RelativeDocumentMoniker": "Assets\\RegisterAgoraCallback.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\RegisterAgoraCallback.cs",
-              "RelativeToolTip": "Assets\\RegisterAgoraCallback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T13:02:07.963Z"
+              "Title": "Tests.asmdef",
+              "DocumentMoniker": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\Tests\\Tests.asmdef",
+              "RelativeDocumentMoniker": "Assets\\Tests\\Tests.asmdef",
+              "ToolTip": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\Tests\\Tests.asmdef",
+              "RelativeToolTip": "Assets\\Tests\\Tests.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2025-04-14T14:19:37.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ScreenShareV2.cs",
-              "DocumentMoniker": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
-              "RelativeDocumentMoniker": "Assets\\ShareScreen\\ScreenShareV2.cs",
-              "ToolTip": "E:\\Study\\CS7CS3 \u2013 Advanced Software Engineering\\VRMeetingRoom\\VRMeetingRoom\\Assets\\ShareScreen\\ScreenShareV2.cs",
-              "RelativeToolTip": "Assets\\ShareScreen\\ScreenShareV2.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAQwAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T16:50:32.116Z"
+              "Title": "Change_Text.asmdef",
+              "DocumentMoniker": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\Scripts\\ChangeText\\Change_Text.asmdef",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ChangeText\\Change_Text.asmdef",
+              "ToolTip": "F:\\unity\\sourcetree\\VRMeetingRoom\\Assets\\Scripts\\ChangeText\\Change_Text.asmdef",
+              "RelativeToolTip": "Assets\\Scripts\\ChangeText\\Change_Text.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2025-04-14T14:17:39.741Z"
             }
           ]
         }

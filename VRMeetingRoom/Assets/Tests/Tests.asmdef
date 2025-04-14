@@ -8,7 +8,11 @@
         "Change_Text",
         "Unity.TextMeshPro.Tests",
         "RemoveAllMark",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "VRChatboxController",
+        "ChatManager",
+        "ChatToggleManager",
+        "UIFollowCamera"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
