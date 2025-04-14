@@ -1199,6 +1199,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pen_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 826279624814729900, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098016800643558817, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931788278041384727, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059389037073184338, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625591955523685576, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663807623614222458, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8854936745891440792, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5057,6 +5087,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pen_Black
       objectReference: {fileID: 0}
+    - target: {fileID: 826279624814729900, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098016800643558817, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931788278041384727, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059389037073184338, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625591955523685576, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663807623614222458, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8854936745891440792, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -6288,16 +6348,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eraser
       objectReference: {fileID: 0}
+    - target: {fileID: 826279624814729900, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098016800643558817, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1720300048528764136, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931788278041384727, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059389037073184338, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2337474115493684045, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 1c153fe863f3c4e618cc7810fd8fee58, type: 3}
+    - target: {fileID: 4625591955523685576, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663807623614222458, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8854936745891440792, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9275,6 +9365,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pen_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 826279624814729900, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098016800643558817, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1931788278041384727, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059389037073184338, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625591955523685576, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663807623614222458, guid: 20d2193eda0f6ee40babc2bce21017c5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8854936745891440792, guid: 20d2193eda0f6ee40babc2bce21017c5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -10053,6 +10173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Draw Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311477608155857765, guid: 84b5e6020682f69499dfea2af89bc429,
+        type: 3}
+      propertyPath: m_VolumeLayerMask.m_Bits
+      value: 503
       objectReference: {fileID: 0}
     - target: {fileID: 5395253316859864147, guid: 84b5e6020682f69499dfea2af89bc429,
         type: 3}
