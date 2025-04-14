@@ -1,0 +1,7 @@
+{
+	"name": "VRChatboxController",
+	"references": [
+		"Unity.TextMeshPro",
+		"UnityEngine.UI"
+	]
+}

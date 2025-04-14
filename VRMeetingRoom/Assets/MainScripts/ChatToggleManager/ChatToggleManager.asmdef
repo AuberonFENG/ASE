@@ -1,0 +1,7 @@
+{
+	"name": "ChatToggleManager",
+	"references": [
+		"Unity.TextMeshPro",
+		"UnityEngine.UI"
+	]
+}
