@@ -113,6 +113,10 @@ public class RegisterAgoraCallback : MonoBehaviour
 
         public override void OnUserMuteVideo(RtcConnection connection, uint uid, bool mute)
         {
+            if (connection.localUid == _desktopScreenShare.localUidEx)
+            {
+                return;
+            }
             if (mute == true)
             {
                 // 用户关闭摄像头，移除对应的远端视图
@@ -129,7 +133,7 @@ public class RegisterAgoraCallback : MonoBehaviour
                 if (!_videoSample.remoteViews.ContainsKey(uid))
                 {
                     GameObject newRemoteView = new GameObject($"RemoteView_{uid}");
-                    newRemoteView.transform.SetParent(GameObject.Find("RemoteContainer").transform);
+                    newRemoteView.transform.SetParent(GameObject.Find("RemoteContainer").transform, false);
                     newRemoteView.transform.Rotate(0.0f, 0.0f, -180.0f);
 
                     // 添加 RectTransform 以控制 UI 布局

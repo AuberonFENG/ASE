@@ -21,9 +21,9 @@ namespace Agora_RTC_Plugin.JoinChannelVideo
         // 填入你的 app ID
         private string _appID = "5dbad5013ad24129a070b83a994f98f6";
         // 填入你的频道名
-        private string _channelName = "test0328";
+        private string _channelName = "test0414";
         // 填入 Token
-        private string _token = "007eJxTYFC7+8Fkz6GMSvZ67r8uiYFixw8mHvwZtPib393sgH2rj8goMJimJCWmmBoYGiemGJkYGlkmGpgbJFkYJ1pamqRZWqSZfVrxLL0hkJFhQ40fCyMDBIL4HAwlqcUlBsZGFgwMAE14Ik8=";
+        private string _token = "007eJxTYOj5tJ/1Y3NEgvnuq1vVOTp2F3DP5NzqNN8itrnoTZhVF68Cg2lKUmKKqYGhcWKKkYmhkWWigblBkoVxoqWlSZqlRZoZF/Pf9IZARoaSqDxmRgYIBPE5GEpSi0sMTAxNGBgAcB4eZQ==";
         internal VideoSurface LocalView;
 
         //internal VideoSurface RemoteView;
