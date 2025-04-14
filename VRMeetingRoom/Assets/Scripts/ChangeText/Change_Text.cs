@@ -11,7 +11,7 @@ public class ChangeText : MonoBehaviour
     public List<Button> buttons; // Reference to all buttons in the container
     public List<string> texts1;  // First set of texts
     public List<string> texts2;  // Second set of texts
-    private List<bool> isText1 = new List<bool> { true, true, true, true, true, true }; // Tracks which set of texts is active
+    private List<bool> isText1 = new List<bool> { true, true, true, true}; // Tracks which set of texts is active
 
 
     void Start()
@@ -69,14 +69,14 @@ public class ChangeText : MonoBehaviour
         //isText1 = !isText1; // Flip the state
     }
 
-    private void OnButtonClick(int index)
-    {
-        // Example: Perform an action specific to the clicked button
-        Debug.Log($"Button {index} clicked!");
-        TextMeshProUGUI textDisplay = buttons[index].GetComponentInChildren<TextMeshProUGUI>();
-        if (textDisplay != null)
-        {
-            textDisplay.text = isText1[index] ? texts2[index] : texts1[index];
-        }
-    }
+    //private void OnButtonClick(int index)
+    //{
+    //    // Example: Perform an action specific to the clicked button
+    //    Debug.Log($"Button {index} clicked!");
+    //    TextMeshProUGUI textDisplay = buttons[index].GetComponentInChildren<TextMeshProUGUI>();
+    //    if (textDisplay != null)
+    //    {
+    //        textDisplay.text = isText1[index] ? texts2[index] : texts1[index];
+    //    }
+    //}
 }
